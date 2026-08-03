@@ -34,7 +34,7 @@
     <span class="shell">&#x1F41A;</span>
     <h1>布魯克的朝聖之路</h1>
   </a>
-  <p class="tagline">Camino Frances &#183; 1000 公里 &#183; 35 天 &#183; SJPP &#8594; Santiago &#8594; Fisterra</p>
+  <p class="tagline">Camino Frances &#183; 1000 公里 &#183; 37 天 &#183; SJPP &#8594; Santiago &#8594; Fisterra</p>
 </header>
 <nav>
   <a href="/">&#x1F3E0; 首頁</a>
@@ -43,7 +43,7 @@
   <a href="/future.html">&#x1F5FA; 未來</a>
 </nav>
 <main>
-<div class="route-card">
+<div class="route-card camino-ninja">
   <div class="route-card-main">
     <div class="route-from">
       <span class="route-dot">●</span>
@@ -52,6 +52,7 @@
     <div class="route-arrow">
       <span>→</span>
       <span class="route-day-badge">Day 2</span>
+      <span class="route-diff-badge easy">🟢 輕鬆</span>
     </div>
     <div class="route-to">
       <span class="route-dot">📍</span>
@@ -59,15 +60,121 @@
     </div>
   </div>
   <div class="route-stats">
-    
     <div class="route-stat">
       <span class="route-stat-icon">📏</span>
       <span class="route-stat-label">距離</span>
       <span class="route-stat-value">23 km</span>
     </div>
-    
+    <div class="route-stat">
+      <span class="route-stat-icon">⛰</span>
+      <span class="route-stat-label">爬升</span>
+      <span class="route-stat-value">↑ 250m</span>
+    </div>
+    <div class="route-stat">
+      <span class="route-stat-icon">🏔</span>
+      <span class="route-stat-label">下降</span>
+      <span class="route-stat-value">↓ 920m</span>
+    </div>
+  </div>
+  <div class="route-elevation-chart">
+    <svg viewBox="0 0 600 130" xmlns="http://www.w3.org/2000/svg" class="elevation-chart" style="width:100%;max-width:600px;height:auto">
+  <defs>
+    <linearGradient id="area-grad-d2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2ecc71" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="line-grad-d2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+  <!-- Background grid lines -->
+  <line x1="55" y1="20" x2="55" y2="105" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="55" y1="105" x2="580" y2="105" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Area fill -->
+  <path d="M 55.0,28.5 L 68.5,29.2 L 81.9,30.0 L 95.4,30.7 L 108.8,31.4 L 122.3,32.1 L 135.8,32.9 L 149.2,33.6 L 162.7,34.3 L 176.2,35.0 L 189.6,35.8 L 203.1,36.5 L 216.5,37.8 L 230.0,40.6 L 243.5,43.4 L 256.9,46.2 L 270.4,48.9 L 283.8,51.7 L 297.3,54.5 L 310.8,57.2 L 324.2,60.0 L 337.7,62.8 L 351.2,65.6 L 364.6,68.3 L 378.1,71.1 L 391.5,73.9 L 405.0,76.7 L 418.5,79.4 L 431.9,82.2 L 445.4,85.0 L 458.8,87.8 L 472.3,90.5 L 485.8,93.3 L 499.2,96.1 L 512.7,95.9 L 526.2,95.2 L 539.6,94.4 L 553.1,93.7 L 566.5,93.0 L 580.0,92.2 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d2)"/>
+  <!-- Line -->
+  <path d="M 55.0,28.5 L 68.5,29.2 L 81.9,30.0 L 95.4,30.7 L 108.8,31.4 L 122.3,32.1 L 135.8,32.9 L 149.2,33.6 L 162.7,34.3 L 176.2,35.0 L 189.6,35.8 L 203.1,36.5 L 216.5,37.8 L 230.0,40.6 L 243.5,43.4 L 256.9,46.2 L 270.4,48.9 L 283.8,51.7 L 297.3,54.5 L 310.8,57.2 L 324.2,60.0 L 337.7,62.8 L 351.2,65.6 L 364.6,68.3 L 378.1,71.1 L 391.5,73.9 L 405.0,76.7 L 418.5,79.4 L 431.9,82.2 L 445.4,85.0 L 458.8,87.8 L 472.3,90.5 L 485.8,93.3 L 499.2,96.1 L 512.7,95.9 L 526.2,95.2 L 539.6,94.4 L 553.1,93.7 L 566.5,93.0 L 580.0,92.2" fill="none" stroke="url(#line-grad-d2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Start dot -->
+  <circle cx="55.0" cy="28.5" r="3" fill="#2ecc71"/>
+  <!-- End dot -->
+  <circle cx="580.0" cy="92.2" r="3" fill="#27ae60"/>
+  <!-- Min elevation label -->
+  <text x="50" y="119" text-anchor="end" font-size="10" fill="#888">520m</text>
+  <!-- Max elevation label -->
+  <text x="50" y="30" text-anchor="end" font-size="10" fill="#888">1050m</text>
+  <!-- Start town -->
+  <text x="55" y="127" text-anchor="start" font-size="10" fill="#666">Roncesvalles</text>
+  <!-- End town -->
+  <text x="580" y="127" text-anchor="end" font-size="10" fill="#666">Zubiri</text>
+</svg>
   </div>
 </div>
+
+
+    <div class="route-arrow">
+      <span>→</span>
+      <span class="route-day-badge">Day 2</span>
+      <span class="route-diff-badge easy">🟢 輕鬆</span>
+    </div>
+    <div class="route-to">
+      <span class="route-dot">📍</span>
+      <span>Zubiri</span>
+    </div>
+  </div>
+  <div class="route-stats">
+    <div class="route-stat">
+      <span class="route-stat-icon">📏</span>
+      <span class="route-stat-label">距離</span>
+      <span class="route-stat-value">23 km</span>
+    </div>
+    <div class="route-stat">
+      <span class="route-stat-icon">⛰</span>
+      <span class="route-stat-label">爬升</span>
+      <span class="route-stat-value">↑ 250m</span>
+    </div>
+    <div class="route-stat">
+      <span class="route-stat-icon">🏔</span>
+      <span class="route-stat-label">下降</span>
+      <span class="route-stat-value">↓ 920m</span>
+    </div>
+  </div>
+  <div class="route-elevation-chart">
+    <svg viewBox="0 0 600 130" xmlns="http://www.w3.org/2000/svg" class="elevation-chart" style="width:100%;max-width:600px;height:auto">
+  <defs>
+    <linearGradient id="area-grad-d2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2ecc71" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="line-grad-d2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+  <!-- Background grid lines -->
+  <line x1="55" y1="20" x2="55" y2="105" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="55" y1="105" x2="580" y2="105" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Area fill -->
+  <path d="M 55.0,28.5 L 68.5,29.2 L 81.9,30.0 L 95.4,30.7 L 108.8,31.4 L 122.3,32.1 L 135.8,32.9 L 149.2,33.6 L 162.7,34.3 L 176.2,35.0 L 189.6,35.8 L 203.1,36.5 L 216.5,37.8 L 230.0,40.6 L 243.5,43.4 L 256.9,46.2 L 270.4,48.9 L 283.8,51.7 L 297.3,54.5 L 310.8,57.2 L 324.2,60.0 L 337.7,62.8 L 351.2,65.6 L 364.6,68.3 L 378.1,71.1 L 391.5,73.9 L 405.0,76.7 L 418.5,79.4 L 431.9,82.2 L 445.4,85.0 L 458.8,87.8 L 472.3,90.5 L 485.8,93.3 L 499.2,96.1 L 512.7,95.9 L 526.2,95.2 L 539.6,94.4 L 553.1,93.7 L 566.5,93.0 L 580.0,92.2 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d2)"/>
+  <!-- Line -->
+  <path d="M 55.0,28.5 L 68.5,29.2 L 81.9,30.0 L 95.4,30.7 L 108.8,31.4 L 122.3,32.1 L 135.8,32.9 L 149.2,33.6 L 162.7,34.3 L 176.2,35.0 L 189.6,35.8 L 203.1,36.5 L 216.5,37.8 L 230.0,40.6 L 243.5,43.4 L 256.9,46.2 L 270.4,48.9 L 283.8,51.7 L 297.3,54.5 L 310.8,57.2 L 324.2,60.0 L 337.7,62.8 L 351.2,65.6 L 364.6,68.3 L 378.1,71.1 L 391.5,73.9 L 405.0,76.7 L 418.5,79.4 L 431.9,82.2 L 445.4,85.0 L 458.8,87.8 L 472.3,90.5 L 485.8,93.3 L 499.2,96.1 L 512.7,95.9 L 526.2,95.2 L 539.6,94.4 L 553.1,93.7 L 566.5,93.0 L 580.0,92.2" fill="none" stroke="url(#line-grad-d2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Start dot -->
+  <circle cx="55.0" cy="28.5" r="3" fill="#2ecc71"/>
+  <!-- End dot -->
+  <circle cx="580.0" cy="92.2" r="3" fill="#27ae60"/>
+  <!-- Min elevation label -->
+  <text x="50" y="119" text-anchor="end" font-size="10" fill="#888">520m</text>
+  <!-- Max elevation label -->
+  <text x="50" y="30" text-anchor="end" font-size="10" fill="#888">1050m</text>
+  <!-- Start town -->
+  <text x="55" y="127" text-anchor="start" font-size="10" fill="#666">Roncesvalles</text>
+  <!-- End town -->
+  <text x="580" y="127" text-anchor="end" font-size="10" fill="#666">Zubiri</text>
+</svg>
+  </div>
+</div>
+
+
 
 <a href="/" class="back-link">&#8592; 回首頁</a><p style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day1.html">&#8592; Day 1</a><a href="/days/">&#x1F4D3; 全部日誌</a><a href="day3.html">Day 3 &#8594;</a></p><div class="article"><h1>Day 2｜森林、溪水、超市大鍋飯</h1><p><strong>2026 年 5 月 22 日 · Roncesvalles → Zubiri · 21km</strong></p>
 <hr>

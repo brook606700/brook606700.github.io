@@ -53,4 +53,13 @@ footer .social a{margin:0 .5rem}
 .route-card-title{font-weight:700;font-size:1rem}
 .route-card-detail{color:var(--muted);font-size:.85rem}
 .route-card.rest-day{display:flex;align-items:center}
-@media(max-width:600px){.site-header h1{font-size:1.4rem}.article{padding:1.2rem}nav a{margin:0 .4rem;font-size:.85rem}}
+/* Camino Ninja-style difficulty badge */
+.route-diff-badge{font-size:.65rem;padding:.12rem .45rem;border-radius:20px;font-weight:600;margin-left:.3rem}
+.route-diff-badge.hard{background:#fde8e8;color:#c0392b}
+.route-diff-badge.medium{background:#fef3e0;color:#e67e22}
+.route-diff-badge.easy{background:#e8f8ef;color:#27ae60}
+/* Elevation chart container */
+.route-elevation-chart{margin-top:1rem;padding:0;border-radius:8px;overflow:hidden;background:#fafaf9}
+.route-elevation-chart svg{display:block;width:100%;height:auto}
+.route-card.camino-ninja{border-left:4px solid var(--accent)}
+@media(max-width:600px){.site-header h1{font-size:1.4rem}.article{padding:1.2rem}nav a{margin:0 .4rem;font-size:.85rem}.route-elevation-chart svg{max-width:100%}}
