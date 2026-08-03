@@ -26,6 +26,13 @@ footer .social a{margin:0 .5rem}
 .article blockquote{border-left:3px solid var(--shell);padding:.5rem 1rem;margin:1rem 0;background:#fdf6ee;border-radius:0 var(--radius) var(--radius) 0;color:var(--muted);font-style:italic}
 .article hr{border:none;border-top:1px solid var(--border);margin:1.5rem 0}
 .article img{max-width:100%;border-radius:var(--radius);margin:1rem 0}
+.photo-gallery{margin:2rem 0}
+.photo-gallery h2{font-size:1.3rem;color:var(--accent);margin-bottom:1rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.gallery-item{display:block;overflow:hidden;border-radius:8px;transition:transform .2s}
+.gallery-item:hover{transform:scale(1.03)}
+.gallery-item img{width:100%;height:200px;object-fit:cover;display:block;margin:0}
+@media(max-width:600px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:8px}.gallery-item img{height:150px}}
 .article code{background:#f5e6d3;padding:.2em .4em;border-radius:4px;font-size:.9em}
 .back-link{display:inline-block;margin-bottom:1.5rem;font-size:.9rem}
 @media(max-width:600px){.site-header h1{font-size:1.4rem}.article{padding:1.2rem}nav a{margin:0 .4rem;font-size:.85rem}}
