@@ -153,5 +153,10 @@
   </p>
   <p style="margin-top:.8rem;">&#x1F41A; Buen Camino &middot; 布魯克的朝聖之路 &copy; 2026</p>
 </footer>
+<script>
+// 防止右鍵與拖曳儲存圖片
+document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+document.addEventListener('dragstart', function(e) { if (e.target.tagName === 'IMG') e.preventDefault(); });
+</script>
 </body>
 </html>

@@ -63,3 +63,6 @@ footer .social a{margin:0 .5rem}
 .route-elevation-chart svg{display:block;width:100%;height:auto}
 .route-card.camino-ninja{border-left:4px solid var(--accent)}
 @media(max-width:600px){.site-header h1{font-size:1.4rem}.article{padding:1.2rem}nav a{margin:0 .4rem;font-size:.85rem}.route-elevation-chart svg{max-width:100%}}
+
+/* 防止圖片盜用 */
+img{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
