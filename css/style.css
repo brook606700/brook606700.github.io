@@ -35,4 +35,22 @@ footer .social a{margin:0 .5rem}
 @media(max-width:600px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:8px}.gallery-item img{height:150px}}
 .article code{background:#f5e6d3;padding:.2em .4em;border-radius:4px;font-size:.9em}
 .back-link{display:inline-block;margin-bottom:1.5rem;font-size:.9rem}
+.route-card{background:var(--card);border-radius:var(--radius);padding:1.2rem 1.5rem;margin-bottom:1.5rem;box-shadow:var(--shadow);border:1px solid var(--border);border-left:4px solid var(--accent)}
+.route-card.rest-day{border-left-color:var(--shell)}
+.route-card-main{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.route-from,.route-to{display:flex;align-items:center;gap:.4rem;font-weight:600;font-size:1.05rem}
+.route-dot{font-size:.6rem;color:var(--accent)}
+.route-to .route-dot{font-size:1rem}
+.route-arrow{display:flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.9rem}
+.route-day-badge{background:var(--shell);color:var(--text);font-size:.7rem;padding:.15rem .5rem;border-radius:20px;font-weight:600}
+.route-stats{display:flex;gap:1.5rem;margin-top:.8rem;flex-wrap:wrap}
+.route-stat{display:flex;align-items:center;gap:.3rem;font-size:.85rem;color:var(--muted)}
+.route-stat-icon{font-size:.9rem}
+.route-stat-label{font-size:.8rem}
+.route-stat-value{font-weight:700;color:var(--text)}
+.route-card-icon{font-size:2rem;margin-right:.5rem}
+.route-card-info{flex:1}
+.route-card-title{font-weight:700;font-size:1rem}
+.route-card-detail{color:var(--muted);font-size:.85rem}
+.route-card.rest-day{display:flex;align-items:center}
 @media(max-width:600px){.site-header h1{font-size:1.4rem}.article{padding:1.2rem}nav a{margin:0 .4rem;font-size:.85rem}}
