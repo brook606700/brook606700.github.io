@@ -1,0 +1,31 @@
+/* 布魯克的朝聖之路 - Camino de Santiago */
+:root{--bg:#fdf6ee;--card:#fff;--text:#3d3027;--muted:#8b7355;--accent:#c17817;--accent-hover:#a06512;--border:#e8d5c0;--shell:#f0c040;--shadow:0 2px 12px rgba(61,48,39,.06);--radius:12px;--max-w:720px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;background:var(--bg);color:var(--text);line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent-hover);text-decoration:underline}
+.site-header{background:linear-gradient(135deg,#f5e6d3 0%,#fdf6ee 100%);border-bottom:1px solid var(--border);padding:2rem 1rem;text-align:center}
+.site-header .shell{font-size:3rem;display:block;margin-bottom:.5rem}
+.site-header h1{font-size:1.8rem;font-weight:700}.site-header .tagline{color:var(--muted);font-size:1rem;margin-top:.3rem}
+nav{max-width:var(--max-w);margin:0 auto;padding:1rem;text-align:center}
+nav a{margin:0 .8rem;font-size:.95rem}
+main{max-width:var(--max-w);margin:0 auto;padding:1.5rem 1rem 4rem}
+.hero{text-align:center;padding:2rem 0}.hero .big-shell{font-size:5rem;display:block}
+.hero h2{font-size:1.5rem;margin:.5rem 0}.hero p{color:var(--muted);max-width:500px;margin:0 auto 1.5rem}
+.day-card,.guide-card{background:var(--card);border-radius:var(--radius);padding:1.5rem;margin:1rem 0;box-shadow:var(--shadow);border:1px solid var(--border)}
+.day-card h3{font-size:1.1rem;margin-bottom:.5rem}
+.phase{margin:2rem 0}.phase h2{font-size:1.3rem;padding-bottom:.5rem;border-bottom:2px solid var(--shell);margin-bottom:1rem}
+footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer .social a{margin:0 .5rem}
+.article{background:var(--card);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+.article h1{font-size:1.5rem;margin-bottom:.5rem}
+.article h2{font-size:1.2rem;margin:1.5rem 0 .5rem;color:var(--accent)}
+.article h3{font-size:1rem;margin:1rem 0 .3rem}
+.article p{margin:.7rem 0}
+.article ul,.article ol{margin:.5rem 0 .5rem 1.5rem}
+.article li{margin:.3rem 0}
+.article blockquote{border-left:3px solid var(--shell);padding:.5rem 1rem;margin:1rem 0;background:#fdf6ee;border-radius:0 var(--radius) var(--radius) 0;color:var(--muted);font-style:italic}
+.article hr{border:none;border-top:1px solid var(--border);margin:1.5rem 0}
+.article img{max-width:100%;border-radius:var(--radius);margin:1rem 0}
+.article code{background:#f5e6d3;padding:.2em .4em;border-radius:4px;font-size:.9em}
+.back-link{display:inline-block;margin-bottom:1.5rem;font-size:.9rem}
+@media(max-width:600px){.site-header h1{font-size:1.4rem}.article{padding:1.2rem}nav a{margin:0 .4rem;font-size:.85rem}}
