@@ -227,7 +227,12 @@
   </url>
   <url>
     <loc>https://brook606700.github.io/guides/transport.html</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://brook606700.github.io/events/sharing-20250830.html</loc>
+    <lastmod>2026-08-10</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
