@@ -48,3 +48,9 @@ https://brook606700.github.io/guides/transport.html
 https://brook606700.github.io/guides/app.html
 https://brook606700.github.io/events/sharing-20250830.html
 https://brook606700.github.io/guides/recommend.html
+https://brook606700.github.io/en/
+https://brook606700.github.io/en/camino-frances.html
+https://brook606700.github.io/es/
+https://brook606700.github.io/es/camino-frances.html
+https://brook606700.github.io/ko/
+https://brook606700.github.io/ko/camino-frances.html
