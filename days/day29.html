@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -333,7 +538,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Santiago de Compostela</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -341,17 +548,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 330m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 350m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">16.5 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>依照路線起伏調整步速；穩定前進，比和別人比快更重要。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 200m–410m</span></div><div class="route-elevation-chart">
+<svg aria-label="O Pedrouzo 至 Santiago de Compostela 的海拔剖面，圖表標尺 200m 至 410m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 29 路線海拔剖面</title><desc>O Pedrouzo 出發，前往 Santiago de Compostela。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d29" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.30"></stop>
@@ -361,20 +567,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e74c3c"></stop>
 <stop offset="100%" stop-color="#1e8449"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,71.8 L 65.7,70.1 L 76.4,67.4 L 87.1,63.0 L 97.9,60.5 L 108.6,59.7 L 119.3,57.1 L 130.0,53.7 L 140.7,52.1 L 151.4,49.8 L 162.1,46.3 L 172.9,45.5 L 183.6,49.0 L 194.3,52.9 L 205.0,57.0 L 215.7,61.8 L 226.4,62.5 L 237.1,58.3 L 247.9,53.7 L 258.6,49.3 L 269.3,43.4 L 280.0,38.7 L 290.7,39.0 L 301.4,42.3 L 312.1,46.0 L 322.9,51.1 L 333.6,55.2 L 344.3,53.2 L 355.0,47.6 L 365.7,42.5 L 376.4,37.3 L 387.1,32.7 L 397.9,33.0 L 408.6,36.2 L 419.3,38.4 L 430.0,41.1 L 440.7,46.1 L 451.4,51.5 L 462.1,57.3 L 472.9,65.9 L 483.6,75.6 L 494.3,82.0 L 505.0,86.7 L 515.7,91.3 L 526.4,93.8 L 537.1,94.3 L 547.9,96.2 L 558.6,98.2 L 569.3,97.5 L 580.0,96.1 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d29)"></path>
 <path d="M 55.0,71.8 L 65.7,70.1 L 76.4,67.4 L 87.1,63.0 L 97.9,60.5 L 108.6,59.7 L 119.3,57.1 L 130.0,53.7 L 140.7,52.1 L 151.4,49.8 L 162.1,46.3 L 172.9,45.5 L 183.6,49.0 L 194.3,52.9 L 205.0,57.0 L 215.7,61.8 L 226.4,62.5 L 237.1,58.3 L 247.9,53.7 L 258.6,49.3 L 269.3,43.4 L 280.0,38.7 L 290.7,39.0 L 301.4,42.3 L 312.1,46.0 L 322.9,51.1 L 333.6,55.2 L 344.3,53.2 L 355.0,47.6 L 365.7,42.5 L 376.4,37.3 L 387.1,32.7 L 397.9,33.0 L 408.6,36.2 L 419.3,38.4 L 430.0,41.1 L 440.7,46.1 L 451.4,51.5 L 462.1,57.3 L 472.9,65.9 L 483.6,75.6 L 494.3,82.0 L 505.0,86.7 L 515.7,91.3 L 526.4,93.8 L 537.1,94.3 L 547.9,96.2 L 558.6,98.2 L 569.3,97.5 L 580.0,96.1" fill="none" stroke="url(#line-grad-d29)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="71.8" fill="#e74c3c" r="3"></circle>
 <circle cx="580.0" cy="96.1" fill="#c0392b" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">200m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">410m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">O Pedrouzo</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Santiago de Compostela</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● O Pedrouzo</span><span>Santiago de Compostela ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day28.html">← Day 28</a><a href="/days/">📓 全部日誌</a><a href="day30.html">Day 30 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 29</div><h1 itemprop="headline">Day 29｜Santiago、800公里後、抵達不是為了停下</h1><p class="article-meta"><time datetime="2026-06-18" itemprop="datePublished">2026 年 6 月 18 日 · O Pedrouzo → Santiago de Compostela · 20km</time></p>
 <hr/>
 <p class="story-lead">朝聖之路第 29 天！距離 Santiago 大教堂，只剩最後的 20 公里。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day29-chapter-1">最後二十公里，聖地牙哥就在前方</a></li><li><a href="#day29-chapter-2">走進朝聖者辦公室，領取一路走來的證明</a></li><li><a href="#day29-chapter-3">大教堂廣場：終於抵達 Santiago</a></li><li><a href="#day29-chapter-4">朝聖者彌撒與盪香爐</a></li><li><a href="#day29-chapter-5">用一頓韓式料理，慶祝走到終點</a></li></ol></details><section class="story-chapter" id="day29-chapter-1"><h2 class="story-section-title">最後二十公里，聖地牙哥就在前方</h2><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="燈火初上的古城街道" class="journal-photo-img" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="田野間的藍色路標石碑" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/2.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="林蔭大道上的朝聖人潮" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/2-1.jpg" width="1920"/></figure></div><p>走到最後這幾天才真的意識到：這趟朝聖之路真的快走完了。如果照官方指南，每天走 20 到 25 公里，走完 800 公里的法國之路大約需要 35 天。但我們從來沒打算追求這個「標準答案」——偏愛自由捐贈的庇護所，完全照自己的節奏：有幾天狂走 40 公里，有些日子任性只走 15 公里，讓身體喘口氣。</p><figure class="journal-photo"><img alt="綠樹夾道的鄉間小路" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/3-2.jpg" width="1920"/></figure><p>只剩最後一段路了。奇怪的是：明明走了二十幾天，從天天盼著石碑倒數「到底什麼時候才會到」，到真的走到這裡，心情卻變得好複雜——滿滿的期待，又湧上一股捨不得。原來這一個月，已經習慣了每天只要單純思考「往前走」這件事。</p><p>倒數兩公里！驚喜發現一家漫畫塗鴉店，自由捐贈就能蓋上超美的教堂蠟章——朝聖護照隱藏版，千萬別錯過！</p></section><section class="story-chapter" id="day29-chapter-2"><h2 class="story-section-title">走進朝聖者辦公室，領取一路走來的證明</h2><p>📍 <a href="https://maps.app.goo.gl/27nok9JMaLQiM9TB6" rel="noopener" target="_blank">蠟章小店位置（Google 地圖）</a></p><figure class="journal-photo"><img alt="石牆上的黃色箭頭與聖母像" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/4-0.jpg" width="1920"/></figure><p>當悠揚的風笛聲從拱門那頭傳來，當聖地牙哥大教堂真正映入眼簾的這一秒，一切突然變得好不真實。站在這裡，喧鬧好像瞬間消失，心裡只有一個很輕、卻很踏實的聲音：「29 天，800 多公里，我真的走到了。」</p><figure class="journal-photo"><img alt="古城街道盡頭的教堂尖塔" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/5.jpg" width="1920"/></figure><p>好不容易走到終點，連休息都來不及，第一件事就是直奔朝聖者辦公室！想要拿到這張意義非凡的證書，現在必須先抽取號碼牌，避免排隊人龍。</p><figure class="journal-photo"><img alt="中世紀古城建築與遊客" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/3-1.jpg" width="1920"/></figure></section><section class="story-chapter" id="day29-chapter-3"><h2 class="story-section-title">大教堂廣場：終於抵達 Santiago</h2><p>領證書時意外發現隱藏版動線：因為三人同行，我們被一路引導到樓下的團體辦理區；自己一個人來的話，就在等候區領號碼牌等叫號。沒想到領一張朝聖證書還有小攻略！</p><p>到了樓下，在電腦前輸入這趟旅程的起點和里程，一個月的跋涉回憶瞬間湧上心頭。這張用拉丁文寫成的 Compostela，在中世紀可是能洗清罪過、真正意義上的「通往天堂 VIP 門票」；對現代的我們，它不只是贖罪券，更是這麼多天沒有放棄的最好證明。</p><figure class="journal-photo"><img alt="朝聖歷史文獻與地圖" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/4.jpg" width="1920"/></figure><p>拿到官方證書後再分享隱藏彩蛋：聖方濟各教堂印製了專屬的朝聖證書，免費提供給「走完全程」的朝聖者！走完 800 公里，一定要來解鎖這個榮耀。</p><figure class="journal-photo"><img alt="華麗的教堂祭壇內部" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/6.jpg" width="1920"/></figure><p>手裡拿著得來不易的證書，我們回到廣場，準備拍下這張等了 800 公里的合照。傳說在一千多年前，天空的奇妙星光指引人們找到使徒聖雅各的陵墓，這裡因此被稱為「繁星之野」。從那之後，國王、騎士、平民甚至罪犯都朝著同一個方向走；中世紀上路死亡率極高，沿途強盜疾病橫行，甚至催生了聖殿騎士團來保護朝聖者——當年能活著走到終點，絕對是奇蹟與庇佑。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="大教堂廣場正面的合影人群" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/7-4.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="藍天下的廣場全景" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/7-7.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day29-chapter-4"><h2 class="story-section-title">朝聖者彌撒與盪香爐</h2><p>如今路上的強盜沒了，這裡變成一條找回自己的路。沿路遇見太多生命的勇士：正在戒毒的年輕人、對抗憂鬱症的旅人，決心離開舒適圈，用最艱難的徒步強迫自己面對內心最深處的恐懼。不同時代、不同理由，最後都走到同一個地方。快門按下的那一刻，這張合照不只是抵達的紀念——它證明面對未知與痛苦時，我們都沒有輕易放棄。</p><p>抵達聖地牙哥，除了領證書，絕不能錯過大教堂的「朝聖者彌撒」！神父會一一念出 24 小時內抵達的朝聖者國籍和出發地，那一刻真的非常感動。而全場最期待的，是傳說中的「盪香爐儀式」：巨型香爐在中世紀是為幫幾個月沒洗澡的朝聖者除臭、驅除傳染病而設，現在平時要團體自費贊助才看得到——幸運之神眷顧，我們這場竟然碰上了！親眼見證 80 公斤的純銀香爐在空中震撼擺盪，絕對是整趟最幸運的祝福。</p><figure class="journal-photo"><img alt="金碧輝煌的祭壇雕像" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/7-9.jpg" width="1920"/></figure><p>參加的是晚上七點半的彌撒，走出大門已接近九點，金黃色的夕陽把整座大教堂照得金燦燦的——此刻陽光給了我們溫暖擁抱。</p><figure class="journal-photo"><img alt="傍晚時分的大教堂雙塔" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/7-10.jpg" width="1920"/></figure></section><section class="story-chapter" id="day29-chapter-5"><h2 class="story-section-title">用一頓韓式料理，慶祝走到終點</h2><p>一整天滿滿的感動，決定用一頓熱騰騰的韓式料理犒賞自己：白飯配濃郁醬汁的炸雞，就是抵達終點最棒的慶功宴！</p><figure class="journal-photo"><img alt="慶功宴上的韓式料理" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/7-6.jpg" width="1920"/></figure><p>29 天，800 多公里。出發前忐忑徬徨，不確定自己能不能走完——畢竟平常沒有爬山或跑步的習慣。但敞開心胸接受路上的一切，找到屬於自己的「舒適節奏」最重要：不要受傷，慢慢走，總會走完。走著走著，沿途的答案變成了水泡、熱浪、迷路與紅酒，還有一路上意想不到的朋友；最觸動人心的，是晚禱撫慰人心的吉他彈唱、70 歲依然熱血的大姊，還有在庇護所和陌生人像家人一樣煮飯跳舞。</p><p>當大教堂出現在眼前，我知道自己走到了——有些許興奮、感動，甚至幸運看見了盪香爐。但總感覺少了些什麼？或許是因為我知道：明天的我，將繼續徒步前往世界盡頭。旅程，還沒有結束。</p><figure class="journal-photo"><img alt="聖地牙哥的月夜星空" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day29/7-12.jpg" width="1920"/></figure></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Santiago de Compostela</h2>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -333,7 +538,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>O Cebreiro</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -341,17 +548,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 1085m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 287m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">37.4 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>累積爬升較大，放慢節奏並為長坡保留體力。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 493m–1,302m</span></div><div class="route-elevation-chart">
+<svg aria-label="Villafranca del Bierzo 至 O Cebreiro 的海拔剖面，圖表標尺 493m 至 1,302m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 23 路線海拔剖面</title><desc>Villafranca del Bierzo 出發，前往 O Cebreiro。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d23" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.30"></stop>
@@ -361,20 +567,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e74c3c"></stop>
 <stop offset="100%" stop-color="#c0392b"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,104.8 L 68.5,102.9 L 81.9,102.0 L 95.4,100.9 L 108.8,98.7 L 122.3,96.8 L 135.8,95.8 L 149.2,94.1 L 162.7,91.8 L 176.2,90.7 L 189.6,90.2 L 203.1,88.1 L 216.5,85.6 L 230.0,84.5 L 243.5,83.4 L 256.9,81.0 L 270.4,79.4 L 283.8,79.2 L 297.3,77.7 L 310.8,74.7 L 324.2,73.0 L 337.7,72.5 L 351.2,70.5 L 364.6,68.2 L 378.1,67.8 L 391.5,67.2 L 405.0,64.1 L 418.5,61.4 L 431.9,60.8 L 445.4,58.6 L 458.8,54.4 L 472.3,51.4 L 485.8,49.5 L 499.2,45.0 L 512.7,39.1 L 526.2,35.9 L 539.6,33.5 L 553.1,28.6 L 566.5,23.7 L 580.0,20.0 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d23)"></path>
 <path d="M 55.0,104.8 L 68.5,102.9 L 81.9,102.0 L 95.4,100.9 L 108.8,98.7 L 122.3,96.8 L 135.8,95.8 L 149.2,94.1 L 162.7,91.8 L 176.2,90.7 L 189.6,90.2 L 203.1,88.1 L 216.5,85.6 L 230.0,84.5 L 243.5,83.4 L 256.9,81.0 L 270.4,79.4 L 283.8,79.2 L 297.3,77.7 L 310.8,74.7 L 324.2,73.0 L 337.7,72.5 L 351.2,70.5 L 364.6,68.2 L 378.1,67.8 L 391.5,67.2 L 405.0,64.1 L 418.5,61.4 L 431.9,60.8 L 445.4,58.6 L 458.8,54.4 L 472.3,51.4 L 485.8,49.5 L 499.2,45.0 L 512.7,39.1 L 526.2,35.9 L 539.6,33.5 L 553.1,28.6 L 566.5,23.7 L 580.0,20.0" fill="none" stroke="url(#line-grad-d23)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="104.8" fill="#e74c3c" r="3"></circle>
 <circle cx="580.0" cy="20.0" fill="#c0392b" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">493m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">1302m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">Villafranca del Bierzo</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">O Cebreiro</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● Villafranca del Bierzo</span><span>O Cebreiro ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day22.html">← Day 22</a><a href="/days/">📓 全部日誌</a><a href="day24.html">Day 24 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 23</div><h1 itemprop="headline">Day 23｜O Cebreiro、最後的爬升、人生也是這樣</h1><p class="article-meta"><time datetime="2026-06-12" itemprop="datePublished">2026 年 6 月 12 日 · Villafranca del Bierzo → O Cebreiro · 29km</time></p>
 <hr/>
 <p class="story-lead">第二十三天，29 公里、爬升 1085 公尺——出發前看到這個數字，心裡只有兩個字：硬仗。這是整條法國之路數一數二陡的路段，傳說中的「最後的爬升」。趁著月色摸黑出發，沿著潺潺的流水聲往前走，頭燈往地上一照，居然捕捉到一個隱藏版微笑。好吧 Camino，算你會鼓勵人，今天陪你拚了。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day23-chapter-1">摸黑出發，最後的爬升開始了</a></li><li><a href="#day23-chapter-2">鹿群、花海與剩下 190 公里的石碑</a></li><li><a href="#day23-chapter-3">風笛聲迎接我們走進 O Cebreiro</a></li><li><a href="#day23-chapter-4">山頂夕陽，替最陡的一天收尾</a></li></ol></details><section class="story-chapter" id="day23-chapter-1"><h2 class="story-section-title">摸黑出發，最後的爬升開始了</h2><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="月色下小徑旁的聖人像" class="journal-photo-img" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/0.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="地面上的隱藏版微笑" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/1.jpg" width="1920"/></figure></div><p>這條路大多時候是一個人走，難免有些枯燥，但只要留心身邊，驚喜自己會冒出來：山坡上悠閒吃草的鹿群，晨光灑滿整片花海。走到剩下 190 公里的石碑前，真的滿滿感觸——800 公里聽起來很長，但隨著每一天的腳步，我們離聖地牙哥越來越近了。正式踏進加利西亞（Galicia），連石碑的氣質都不一樣了。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="山坡上悠閒的鹿群" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/2.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="晨光中的鹿群剪影" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/3.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="灑滿晨光的花海" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/5.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="加利西亞 190 公里石碑" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/8.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="朝聖之路距離紀念碑" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/4.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day23-chapter-2"><h2 class="story-section-title">鹿群、花海與剩下 190 公里的石碑</h2><p>路上再次巧遇從澳洲來的台灣人，大家一路有說有笑，鄉愁直接被接住；還遇到一位為了做研究來走朝聖之路的日本交換學生，語言不通沒關係，翻譯軟體拿出來照樣能聊整路。不過越往山上走，考驗越重口味——路邊的動物大便越來越多，那氣味真的會讓人靈魂出竅。熬過氣味的地獄考驗，眼前的視野跟著豁然開朗：太陽很曬，但山頂的風無比清涼，人生也是這樣吧。</p><figure class="journal-photo"><img alt="路上巧遇的夥伴合影" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/9.jpg" width="1920"/></figure><p>快進小鎮時，樹林裡突然傳來悠揚的風笛聲！原來是一位穿著傳統服飾的大叔站在路邊吹奏，就像是專程為朝聖者準備的迎賓曲。爬了快 30 公里，聽到這個，眼淚差點跟汗水一起掉下來。</p></section><section class="story-chapter" id="day23-chapter-3"><h2 class="story-section-title">風笛聲迎接我們走進 O Cebreiro</h2><p>一進小鎮，這家禮品店絕對必訪！只要有消費，老闆直接霸氣贈送專屬國旗徽章——在朝聖路上拿到屬於自己國家的徽章，那種被認出的感動，真的很難形容。</p><p>終於抵達這間讓人又愛又恨的庇護所！內部床位超級密集，轉身都有難度。強烈提醒大家務必顧好隨身財物——我夥伴的錢直接在這裡被偷了，據說失竊在這裡早已是常態。更崩潰的是淋浴間居然沒有門簾，夥伴還遇到有外國人會「特地」走錯，隱私跟安全感直接大扣分。⚠️ 警示：貴重物品一定隨身、洗澡最好結伴、可以自備一條大毛巾當門簾。</p><p>不過，這裡卻藏著整趟 Camino 最無敵的夕陽。我們先去教堂參加晚禱，接受朝聖者專屬的祝福，還拿到一枚畫著黃色箭頭的小石頭——小小一顆，握在手心卻很有重量，好像把一整天的路都收進去了。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="教堂晚禱彌撒" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/10.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="畫著黃色箭頭的小石頭" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/11.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day23-chapter-4"><h2 class="story-section-title">山頂夕陽，替最陡的一天收尾</h2><p>接著回來靜靜等待夕陽。當絕美的火燒雲染紅整片山谷，所有的累、所有的狼狽，都被這片天空救贖了。大自然的美，絕對是今天最完美的收尾——最後的爬升，人生也是這樣，最陡的那一段，風景最好。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="染紅山谷的火燒雲夕陽" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/12.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="O Cebreiro 山頂的絕美夕陽" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/13.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="夕陽下的山谷雲海" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/14.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="暮色中的 O Cebreiro 小鎮" class="journal-photo-img" decoding="async" height="966" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/15.jpg" width="1715"/></figure></div><p>回望這座石頭小鎮，白馬在街頭靜靜踱步，石板路配著山間的霧氣，彷彿時間在這裡走得特別慢。能在爬升 1085 公尺之後看到這一幕，一切都值了。</p><figure class="journal-photo"><img alt="小鎮街頭的白馬" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day23/7.jpg" width="1920"/></figure></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：O Cebreiro</h2>

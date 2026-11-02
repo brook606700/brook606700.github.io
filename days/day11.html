@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -295,6 +296,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -330,7 +535,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Cardeñuela Riopico</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -338,17 +545,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 400m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 310m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">17.4 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>依照路線起伏調整步速；穩定前進，比和別人比快更重要。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 700m–1,180m</span></div><div class="route-elevation-chart">
+<svg aria-label="Tosantos 至 Cardeñuela Riopico 的海拔剖面，圖表標尺 700m 至 1,180m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 11 路線海拔剖面</title><desc>Tosantos 出發，前往 Cardeñuela Riopico。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d11" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#f39c12" stop-opacity="0.30"></stop>
@@ -358,20 +564,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#f39c12"></stop>
 <stop offset="100%" stop-color="#e67e22"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,101.1 L 65.7,100.3 L 76.4,99.1 L 87.1,97.1 L 97.9,95.8 L 108.6,95.3 L 119.3,93.9 L 130.0,92.3 L 140.7,91.5 L 151.4,90.1 L 162.1,87.7 L 172.9,85.7 L 183.6,84.0 L 194.3,81.2 L 205.0,78.5 L 215.7,77.1 L 226.4,75.4 L 237.1,73.3 L 247.9,72.0 L 258.6,71.3 L 269.3,69.6 L 280.0,67.6 L 290.7,66.4 L 301.4,64.6 L 312.1,61.7 L 322.9,59.3 L 333.6,57.2 L 344.3,54.4 L 355.0,51.7 L 365.7,50.3 L 376.4,48.8 L 387.1,46.7 L 397.9,45.3 L 408.6,44.1 L 419.3,42.0 L 430.0,39.6 L 440.7,37.9 L 451.4,35.9 L 462.1,33.2 L 472.9,31.5 L 483.6,30.6 L 494.3,29.3 L 505.0,28.1 L 515.7,28.2 L 526.4,28.0 L 537.1,26.9 L 547.9,26.5 L 558.6,26.6 L 569.3,25.8 L 580.0,24.9 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d11)"></path>
 <path d="M 55.0,101.1 L 65.7,100.3 L 76.4,99.1 L 87.1,97.1 L 97.9,95.8 L 108.6,95.3 L 119.3,93.9 L 130.0,92.3 L 140.7,91.5 L 151.4,90.1 L 162.1,87.7 L 172.9,85.7 L 183.6,84.0 L 194.3,81.2 L 205.0,78.5 L 215.7,77.1 L 226.4,75.4 L 237.1,73.3 L 247.9,72.0 L 258.6,71.3 L 269.3,69.6 L 280.0,67.6 L 290.7,66.4 L 301.4,64.6 L 312.1,61.7 L 322.9,59.3 L 333.6,57.2 L 344.3,54.4 L 355.0,51.7 L 365.7,50.3 L 376.4,48.8 L 387.1,46.7 L 397.9,45.3 L 408.6,44.1 L 419.3,42.0 L 430.0,39.6 L 440.7,37.9 L 451.4,35.9 L 462.1,33.2 L 472.9,31.5 L 483.6,30.6 L 494.3,29.3 L 505.0,28.1 L 515.7,28.2 L 526.4,28.0 L 537.1,26.9 L 547.9,26.5 L 558.6,26.6 L 569.3,25.8 L 580.0,24.9" fill="none" stroke="url(#line-grad-d11)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="101.1" fill="#f39c12" r="3"></circle>
 <circle cx="580.0" cy="24.9" fill="#e67e22" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">700m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">1180m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">Tosantos</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Cardeñuela Riopico</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● Tosantos</span><span>Cardeñuela Riopico ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day10.html">← Day 10</a><a href="/days/">📓 全部日誌</a><a href="day12.html">Day 12 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting">
 <div class="day-eyebrow">CAMINO JOURNAL · DAY 11</div><h1 itemprop="headline">Day 11｜貓掌印、蠟章與千元羊毛襪—翻越山頂的絕美視野</h1><p class="article-meta"><time datetime="2026-05-31" itemprop="datePublished">2026 年 5 月 31 日 · Tosantos → Cardeñuela Riopico · 23km</time></p>
 <hr/>

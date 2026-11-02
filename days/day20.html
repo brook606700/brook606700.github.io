@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -333,7 +538,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Rabanal del Camino</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -341,17 +548,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 472m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 145m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">12.8 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>單日路程較長，建議把補水與補給分段安排。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 820m–1,158m</span></div><div class="route-elevation-chart">
+<svg aria-label="Hospital de Órbigo 至 Rabanal del Camino 的海拔剖面，圖表標尺 820m 至 1,158m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 20 路線海拔剖面</title><desc>Hospital de Órbigo 出發，前往 Rabanal del Camino。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d20" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.30"></stop>
@@ -361,20 +567,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e74c3c"></stop>
 <stop offset="100%" stop-color="#c0392b"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,88.0 L 65.7,87.2 L 76.4,86.5 L 87.1,85.8 L 97.9,85.0 L 108.6,84.5 L 119.3,83.8 L 130.0,83.0 L 140.7,82.2 L 151.4,81.5 L 162.1,80.8 L 172.9,80.0 L 183.6,79.2 L 194.3,78.0 L 205.0,76.5 L 215.7,75.0 L 226.4,73.5 L 237.1,72.0 L 247.9,70.0 L 258.6,67.5 L 269.3,65.5 L 280.0,64.0 L 290.7,65.5 L 301.4,67.0 L 312.1,66.0 L 322.9,64.5 L 333.6,63.0 L 344.3,61.5 L 355.0,60.0 L 365.7,58.0 L 376.4,56.0 L 387.1,54.0 L 397.9,52.0 L 408.6,50.0 L 419.3,48.0 L 430.0,46.0 L 440.7,44.0 L 451.4,42.0 L 462.1,40.0 L 472.9,38.0 L 483.6,36.5 L 494.3,35.0 L 505.0,34.0 L 515.7,33.0 L 526.4,32.0 L 537.1,31.0 L 547.9,30.0 L 558.6,29.0 L 569.3,28.5 L 580.0,28.0 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d20)"></path>
 <path d="M 55.0,88.0 L 65.7,87.2 L 76.4,86.5 L 87.1,85.8 L 97.9,85.0 L 108.6,84.5 L 119.3,83.8 L 130.0,83.0 L 140.7,82.2 L 151.4,81.5 L 162.1,80.8 L 172.9,80.0 L 183.6,79.2 L 194.3,78.0 L 205.0,76.5 L 215.7,75.0 L 226.4,73.5 L 237.1,72.0 L 247.9,70.0 L 258.6,67.5 L 269.3,65.5 L 280.0,64.0 L 290.7,65.5 L 301.4,67.0 L 312.1,66.0 L 322.9,64.5 L 333.6,63.0 L 344.3,61.5 L 355.0,60.0 L 365.7,58.0 L 376.4,56.0 L 387.1,54.0 L 397.9,52.0 L 408.6,50.0 L 419.3,48.0 L 430.0,46.0 L 440.7,44.0 L 451.4,42.0 L 462.1,40.0 L 472.9,38.0 L 483.6,36.5 L 494.3,35.0 L 505.0,34.0 L 515.7,33.0 L 526.4,32.0 L 537.1,31.0 L 547.9,30.0 L 558.6,29.0 L 569.3,28.5 L 580.0,28.0" fill="none" stroke="url(#line-grad-d20)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="88.0" fill="#e74c3c" r="3"></circle>
 <circle cx="580.0" cy="28.0" fill="#c0392b" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">820m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">1158m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">Hospital de Órbigo</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Rabanal del Camino</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● Hospital de Órbigo</span><span>Rabanal del Camino ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day19.html">← Day 19</a><a href="/days/">📓 全部日誌</a><a href="day21.html">Day 21 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 20</div><h1 itemprop="headline">Day 20｜高第建築、留言本的巧合、註定的相遇</h1><p class="article-meta"><time datetime="2026-06-09" itemprop="datePublished">2026 年 6 月 9 日 · Hospital de Órbigo → Rabanal del Camino · 37km</time></p>
 <hr/>
 <p class="story-lead">昨晚 Hospital de Órbigo 的中世紀長槍對決實在太瘋狂了，戰馬嘶鳴、長槍折斷的畫面到現在還在腦海裡轉。帶著那份熱血，我們今天依然摸黑出發——今天距離不短，要一口氣推進 37 公里，雙腳才剛醒就得上工，有夠硬。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day20-chapter-1">離開梅塞塔，朝 Astorga 前進</a></li><li><a href="#day20-chapter-2">走進巧克力之城與高第建築</a></li><li><a href="#day20-chapter-3">抵達 Rabanal，聽見一句值得記住的話</a></li></ol></details><section class="story-chapter" id="day20-chapter-1"><h2 class="story-section-title">離開梅塞塔，朝 Astorga 前進</h2><figure class="journal-photo"><img alt="夕陽下公路上背著背包前行的朝聖者" class="journal-photo-img" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/1.jpg" width="1920"/></figure><p>在這裡，意味著終於熬過了漫長的 Meseta 平原，準備迎接遠方的連綿山脈。迎著日出的晨光出發，腳下的黃土路像一條金色的絲帶，一路延伸到地平線。看著這遼闊的上帝視角，晨光灑落大地，心裡滿滿的自由與喜悅——原來走出平原的感覺，是這麼爽快。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="金色黃土路旁刻著里程的石樁" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/6-2.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="山丘石十字架下眺望遠方小城" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/2.jpg" width="1920"/></figure></div><p>路邊這座朝聖者銅像吸引了我的目光，幾百年來，走在這條路上的人換了一批又一批，但那份身體的疲勞、和喝下這口水的痛快感，絕對是一模一樣的。這畫面太真實了，先補個水，我們繼續上路。走到第 20 天，最初的新奇感已經褪去——一開始每條路都很新奇，看到教堂會拍照、遇到陌生人會興奮，但走到現在，不用刻意找方向，順著黃色箭頭走就對了。褪去所有觀光客的濾鏡，當這一切成為日常，才是最真實的 Camino。</p><figure class="journal-photo"><img alt="路旁背著行囊的朝聖者銅像" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/2-1.jpg" width="1920"/></figure></section><section class="story-chapter" id="day20-chapter-2"><h2 class="story-section-title">走進巧克力之城與高第建築</h2><p>進入阿斯托加（Astorga）市區，這裡可是有名的「巧克力之都」，整座城都飄著可可的甜香。不過真正讓我大開眼界的在後面——廣場上的雄獅雕像威風登場，而眼前這座雄偉的阿斯托加主教座堂，直接把我釘在原地。高第在打造舉世聞名的聖家堂之前，先在這裡留下了這座視覺衝擊力爆表的作品，門上的立體石雕細節直接拉滿，那種極致的莊嚴與震撼，真的要站在現場才能感受。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="阿斯托加古城與教堂全景" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/3.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="阿斯托加廣場上的雄獅雕像" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/3-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="高第設計的阿斯托加主教宮全景" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/5-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="主教宮外牆精緻的石雕天使" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/4.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="主教宮灰白石材雙塔立面" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/5.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="主教宮正面對稱的城堡式立面" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/6.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="主教宮內部華麗的宗教浮雕" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/5-2.jpg" width="1920"/></figure></div><p>早餐時間！隨機走進教堂旁的一間 Bar，爬上二樓直接被眼前的視野驚呆——超美的半圓形採光窗，直接把高第的夢幻城堡框成了一幅畫。坐在 VIP 級的專屬窗景前吃早餐，看著陽光灑在石牆上，這一餐真的太享受了啦！</p><figure class="journal-photo"><img alt="咖啡館二樓半圓窗框住的高第城堡窗景" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/6-1.jpg" width="1920"/></figure></section><section class="story-chapter" id="day20-chapter-3"><h2 class="story-section-title">抵達 Rabanal，聽見一句值得記住的話</h2><p>離開了雄偉的教堂，但今天最震撼的，其實不是任何建築。在路上，我遇到了一對台灣情侶，邊走邊聊、隨口聊起彼此出發的日期，我突然想起在 Zubiri 庇護所的留言本上，看到的那行無比親切的中文：「世界很大，人很渺小，感謝每一個遇見、幫助與微笑。Buen Camino」。我跟他們分享了這件事，結果下一秒，他們笑著說——那就是他們寫的。</p><p>誰能想到，走了十八天，在幾百公里外的這裡，我居然遇見了這段文字的主人！那瞬間我整個人起雞皮疙瘩，這機率到底有多低？在 Camino 上，沒有什麼是偶然的，每一段相遇都有意義。也許我們走這條路，不只是為了到達終點，而是為了遇見那些原本一輩子都不會交集的人。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="與台灣情侶在石十字架前的合影" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/8.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="牧場上長著彎曲長角的牛" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/7.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="綠色牧場上悠閒吃草的牛群" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day20/7-1.jpg" width="1920"/></figure></div><p>一路聊著笑著，終於抵達山間小鎮 Rabanal del Camino 的庇護所，37 公里的疲勞在放下背包那一刻全湧上來。今晚沒有神聖的晚禱，但下午茶時間，牧師卻像個老朋友一樣，留給我們一句話：「只要堅持往前走，並且打開心胸去接受路上的所有事物，一切都是最好的。」嗯，今天的相遇，大概就是這句話最好的證明吧。</p></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Astorga</h2>

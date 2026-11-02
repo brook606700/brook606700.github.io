@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -317,7 +522,7 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </nav>
 <div class="social-nav" style="text-align:center;padding:0.6rem 0.3rem;background:linear-gradient(135deg,#fafafa,#f0f0f0);border-bottom:1px solid #e8e8e8;font-size:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:0.3rem"> <a href="https://instagram.com/brook_606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">📷 IG</a> <a href="https://threads.net/@brook_606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">🧵 Threads</a> <a href="https://tiktok.com/@brook_606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">🎵 TikTok</a> <a href="https://youtube.com/@brook606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">🎬 YouTube</a></div>
 <main><nav aria-label="breadcrumb" style="font-size:0.85rem;color:#888;margin:0 0 1rem;"><a href="https://brook606700.github.io/">首頁</a> › <a href="https://brook606700.github.io/days/">全部日誌</a> › <span aria-current="page">Day 37｜回家、紅布條、Buen Camino</span></nav>
-<div class="route-card camino-ninja"><div class="route-card-main"><div class="route-from"><span class="route-dot">●</span><span>Madrid</span></div><div class="route-arrow"><span>→</span><span class="route-day-badge">Day 37</span><span class="route-diff-badge medium">✈️ 回家</span></div><div class="route-to"><span class="route-dot">📍</span><span>Taiwan</span></div></div><div class="route-stats"><div class="route-stat"><span class="route-stat-icon">✈️</span><span class="route-stat-label">交通</span><span class="route-stat-value">長途飛行</span></div><div class="route-stat"><span class="route-stat-icon">🔄</span><span class="route-stat-label">轉機</span><span class="route-stat-value">杜拜</span></div><div class="route-stat"><span class="route-stat-icon">🏠</span><span class="route-stat-label">終點</span><span class="route-stat-value">台灣</span></div></div></div>
+<div class="route-card camino-ninja"><div class="route-card-main"><div class="route-from"><span class="route-dot">●</span><span>Madrid</span></div><div class="route-arrow"><span>→</span><span class="route-day-badge">Day 37</span><span class="route-diff-badge medium">✈️ 回家</span></div><div class="route-to"><span class="route-dot">📍</span><span>Taiwan</span></div></div><div class="route-card-body route-card-body--transit"><div class="route-stats route-stats--transit"><div class="route-stat"><span class="route-stat-icon">✈️</span><span class="route-stat-label">交通</span><span class="route-stat-value">長途飛行</span></div><div class="route-stat"><span class="route-stat-icon">🔄</span><span class="route-stat-label">轉機</span><span class="route-stat-value">杜拜</span></div><div class="route-stat"><span class="route-stat-icon">🏠</span><span class="route-stat-label">終點</span><span class="route-stat-value">台灣</span></div></div><div class="route-transport-panel"><span class="route-transport-icon">✈️</span><div><div class="route-transport-title">交通／移動日</div><div class="route-transport-note">本日以交通移動為主，保留實際交通、抵達與旅程資訊，不虛構徒步海拔曲線。</div></div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day36.html">← Day 36</a><a href="/days/">📓 全部日誌</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">AFTER THE WALK · DAY 37</div><h1 itemprop="headline">Day 37｜回家、紅布條、Buen Camino</h1><p class="article-meta"><time datetime="2026-06-26" itemprop="datePublished">2026 年 6 月 26 日 · Madrid → Taiwan · 回家</time></p>
 <hr/>
 <p class="story-lead">前往機場的路上，回想從出發前的忐忑與徬徨——不確定一個平常不爬山、不跑步的自己，到底能不能走完；到現在，坐在回程的飛機上。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day37-chapter-1">從飛機窗口，回望這一千公里</a></li><li><a href="#day37-chapter-2">那些一路陪伴我的人與事</a></li><li><a href="#day37-chapter-3">回到台灣，才發現終點一直在身邊</a></li></ol></details><section class="story-chapter" id="day37-chapter-1"><h2 class="story-section-title">從飛機窗口，回望這一千公里</h2><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="機場草莓盒" class="journal-photo-img" decoding="async" fetchpriority="high" height="900" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/0-1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="機場啤酒留念" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/0.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="候機室望客機" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/2.jpg" width="1600"/></figure></div><p>這一千公里的朝聖之路，教會我最重要的一件事，就是不要跟別人比快。敞開心胸，接受路上的一切，找到屬於自己的舒適節奏。不要受傷，慢慢走，總會走完的。</p><figure class="journal-photo"><img alt="機窗落日剪影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/1.jpg" width="1600"/></figure><p>而這一路上的答案，有時候是水泡、熱浪、迷路，但更多時候，是那些意想不到的相遇：晚禱時撫慰人心的吉他彈唱、七十歲依然熱血的大姊，還有在庇護所裡，和一群原本陌生的人一起煮飯、跳舞，像家人一樣分享生活。意外遇上 León 的古代軍隊遊行、中世紀比武，最後也終於走進了聖地牙哥大教堂，親眼看見盪香爐。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="機上餐點" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/3.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="雲海晚霞機翼" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/4.jpg" width="1600"/></figure></div></section><section class="story-chapter" id="day37-chapter-2"><h2 class="story-section-title">那些一路陪伴我的人與事</h2><p>老爸環遊世界的夢想還沒完成，就先離開了。所以這一次，我帶著他的那份念想，走向世界盡頭。而現在，我做到了。爸，世界很大，我們又一起多看了一點。</p><figure class="journal-photo"><img alt="俯瞰台灣公路" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/6.jpg" width="1600"/></figure><p>飛機一落地，從馬德里的街頭，瞬間切換回熟悉的台灣。當我走出大門，迎面而來的是舉著浮誇紅布條、笑得比我還誇張的好朋友時，那一瞬間我突然懂了：真正的終點，就是這份熟悉的味道，和這群熟悉的人。回家的感覺，真好。</p><figure class="journal-photo"><img alt="親友接機合影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day37/8.jpg" width="1600"/></figure></section><section class="story-chapter" id="day37-chapter-3"><h2 class="story-section-title">回到台灣，才發現終點一直在身邊</h2><p>用一頓久違的台式辦桌為這趟冒險洗塵，大口吃下久違的台灣味——這絕對是世界上最奢侈的幸福。朝聖之路結束了，但對世界的探索，永遠不會停止。</p><p>Buen Camino！布魯克，平安歸來。</p></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Buen Camino</h2>

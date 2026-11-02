@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -333,7 +538,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Villafranca del Bierzo</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -341,17 +548,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 313m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 355m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">12.0 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>依照路線起伏調整步速；穩定前進，比和別人比快更重要。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 475m–575m</span></div><div class="route-elevation-chart">
+<svg aria-label="Ponferrada 至 Villafranca del Bierzo 的海拔剖面，圖表標尺 475m 至 575m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 22 路線海拔剖面</title><desc>Ponferrada 出發，前往 Villafranca del Bierzo。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d22" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e67e22" stop-opacity="0.30"></stop>
@@ -361,20 +567,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e67e22"></stop>
 <stop offset="100%" stop-color="#d35400"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,55.0 L 65.7,53.2 L 76.4,50.5 L 87.1,48.1 L 97.9,50.3 L 108.6,54.8 L 119.3,56.2 L 130.0,54.0 L 140.7,51.5 L 151.4,53.3 L 162.1,57.1 L 172.9,58.4 L 183.6,56.0 L 194.3,52.8 L 205.0,50.2 L 215.7,51.9 L 226.4,55.6 L 237.1,58.9 L 247.9,57.4 L 258.6,53.1 L 269.3,51.0 L 280.0,52.6 L 290.7,56.8 L 301.4,59.5 L 312.1,57.2 L 322.9,54.4 L 333.6,55.9 L 344.3,59.3 L 355.0,61.0 L 365.7,58.2 L 376.4,54.6 L 387.1,53.0 L 397.9,55.4 L 408.6,59.8 L 419.3,62.1 L 430.0,60.3 L 440.7,57.0 L 451.4,58.6 L 462.1,62.4 L 472.9,64.8 L 483.6,62.0 L 494.3,59.2 L 505.0,60.8 L 515.7,64.5 L 526.4,66.9 L 537.1,64.2 L 547.9,61.5 L 558.6,63.1 L 569.3,65.8 L 580.0,68.4 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d22)"></path>
 <path d="M 55.0,55.0 L 65.7,53.2 L 76.4,50.5 L 87.1,48.1 L 97.9,50.3 L 108.6,54.8 L 119.3,56.2 L 130.0,54.0 L 140.7,51.5 L 151.4,53.3 L 162.1,57.1 L 172.9,58.4 L 183.6,56.0 L 194.3,52.8 L 205.0,50.2 L 215.7,51.9 L 226.4,55.6 L 237.1,58.9 L 247.9,57.4 L 258.6,53.1 L 269.3,51.0 L 280.0,52.6 L 290.7,56.8 L 301.4,59.5 L 312.1,57.2 L 322.9,54.4 L 333.6,55.9 L 344.3,59.3 L 355.0,61.0 L 365.7,58.2 L 376.4,54.6 L 387.1,53.0 L 397.9,55.4 L 408.6,59.8 L 419.3,62.1 L 430.0,60.3 L 440.7,57.0 L 451.4,58.6 L 462.1,62.4 L 472.9,64.8 L 483.6,62.0 L 494.3,59.2 L 505.0,60.8 L 515.7,64.5 L 526.4,66.9 L 537.1,64.2 L 547.9,61.5 L 558.6,63.1 L 569.3,65.8 L 580.0,68.4" fill="none" stroke="url(#line-grad-d22)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="55.0" fill="#e67e22" r="3"></circle>
 <circle cx="580.0" cy="68.4" fill="#d35400" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">475m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">575m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">Ponferrada</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Villafranca del Bierzo</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● Ponferrada</span><span>Villafranca del Bierzo ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day21.html">← Day 21</a><a href="/days/">📓 全部日誌</a><a href="day23.html">Day 23 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 22</div><h1 itemprop="headline">Day 22｜進入倒數 200km、韓國人朝聖之謎</h1><p class="article-meta"><time datetime="2026-06-11" itemprop="datePublished">2026 年 6 月 11 日 · Ponferrada → Villafranca del Bierzo · 26km 🍇</time></p>
 <hr/>
 <p class="story-lead">第 22 天，天還沒全亮我就出門了。Ponferrada 的聖殿騎士古堡泡在晨曦裡，安靜得有點不真實——昨天它還氣勢磅礡像電影場景，今天清晨卻溫柔得像在目送我們出發。我踩著剛甦醒的光線，繼續往西走，正式進入倒數 200 公里的路段。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day22-chapter-1">一張台灣貼紙，讓山路有了家的方向</a></li><li><a href="#day22-chapter-2">走過最後兩百公里，慢慢進入加利西亞</a></li><li><a href="#day22-chapter-3">遇見來自不同地方的旅伴</a></li><li><a href="#day22-chapter-4">在修道院庇護所安頓下來</a></li></ol></details><section class="story-chapter" id="day22-chapter-1"><h2 class="story-section-title">一張台灣貼紙，讓山路有了家的方向</h2><figure class="journal-photo"><img alt="晨曦中的 Ponferrada 聖殿騎士古堡" class="journal-photo-img" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/0.jpg" width="1920"/></figure><p>走沒多久，一個路標把我整個人定住——兩公尺高的地方，貼著一張小小的台灣國旗貼紙。我仰頭看了超久，滿腦子只有一個問題：這到底是怎麼貼上去的？難道朝聖者出門都要自備梯子嗎？還是有人直接被隊友抬上去貼的？這個謎，大概跟 Camino 上很多事一樣，永遠不會有答案。</p><figure class="journal-photo"><img alt="兩公尺高處的台灣國旗貼紙之謎" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/2.jpg" width="1920"/></figure><p>繼續走，抬頭又看到熟悉的鐘牆，頂端站著一隻鳥，一動也不動，完美融入古老的石牆，遠看根本像一尊精心雕刻的石像。我盯著牠看了好一會兒，牠連動都不動一下，演技滿分。朝聖路上就是這樣，總有些莫名其妙的小亮點，莫名其妙就把你逗樂了。</p><figure class="journal-photo"><img alt="鐘牆頂端宛如雕像的鳥" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/3.jpg" width="1920"/></figure></section><section class="story-chapter" id="day22-chapter-2"><h2 class="story-section-title">走過最後兩百公里，慢慢進入加利西亞</h2><p>然後，重頭戲來了——最後 200 公里！這裡沒有正式的石碑，里程數字直接印在路邊 Bar 的廣告看板上。老闆真的很懂朝聖者，走到這個階段，不進去喝一杯好像說不過去。好，那就恭敬不如從命，坐下來，用一杯咖啡（或你懂的）慶祝自己走了 600 公里。</p><figure class="journal-photo"><img alt="路邊 Bar 廣告看板上的最後 200 公里" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/4-1.jpg" width="1920"/></figure><p>經過 Camponaraya 的路口，目光直接被一座舉重雕像吸走——槓鈴、五環，造型超有氣勢。查了才知道，這裡是西班牙傳奇女子舉重選手 Lidia Valentín 的故鄉，奧運金牌得主！小鎮用一座五環裝置藝術迎接路過的朝聖者，這種在地驕傲，真的很有西班牙小鎮的味道。</p><figure class="journal-photo"><img alt="Camponaraya 奧運舉重五環裝置藝術" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/5.jpg" width="1920"/></figure><p>今天還解鎖了一個新單字：Buen día，西班牙文的「祝你有美好的一天」。早上跟庇護所主人學的，馬上現學現賣，一整路逢人就 Buen día，看到朝聖者就打招呼。發音爛沒關係，誠意滿分，對方回你一個笑容，這一天就值了。感受風、感受簡單的快樂，繼續上路！</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="清晨出發的行走過場" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="鄉間小路的行走過場" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/4.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day22-chapter-3"><h2 class="story-section-title">遇見來自不同地方的旅伴</h2><p>下午的路段美到犯規，兩旁是整片的葡萄田，隨便一拍都像明信片。我跟昨天認識的澳洲台灣人邊走邊聊，正沉浸在田園風光裡，下一秒就被一隻站在二樓狂吠的狗嚇到彈起來——牠半個身體都快探出窗外了，看起來超危險又超好笑。一點驚嚇配滿滿的歡笑，這就是 Camino 的日常調味料。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="隨便拍都像明信片的葡萄田" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/6.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="葡萄田間的小路" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/7.jpg" width="1920"/></figure></div><p>傍晚抵達 Villafranca del Bierzo，今晚的庇護所大有來頭——Albergue San Nicolás el Real。一走進去我就哇出來：充滿歷史感的石拱中庭，配上華麗的階梯穹頂，根本像住進宮殿裡。在朝聖路上睡過體育館大通鋪之後，這種地方真的會讓人懷疑自己是不是走錯棚。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="Albergue San Nicolás el Real 石拱中庭" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/8.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="庇護所華麗的階梯穹頂" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/8-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="如宮殿般的修道院庇護所內部" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/8-2.jpg" width="1920"/></figure></div><p>重頭戲在這裡——這間庇護所就是知名韓綜《西班牙寄宿》的拍攝地！如果你好奇為什麼朝聖路上總是遇到超多韓國人，答案很大一部分就是這檔節目，很多韓國人認識這條路都是從它開始的。同行的夥伴站在門口直接開玩笑：「聖地亞哥不是我的終點，這裡才是！」全團大笑。而且這裡只有 10 個床位，能親眼看到節目裡的經典場景還搶到床位入住，這趟真的值回票價。</p><figure class="journal-photo"><img alt="韓綜《西班牙寄宿》拍攝地庇護所門口" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/9.jpg" width="1920"/></figure></section><section class="story-chapter" id="day22-chapter-4"><h2 class="story-section-title">在修道院庇護所安頓下來</h2><p>傍晚爬上高處切換上帝視角，俯瞰這座百年修道院庇護所——群山環抱的寧靜小鎮、遠方的古堡剪影，全都泡在金色夕陽裡，宛如一幅中世紀畫卷。本批沒有空拍照，就把這幅畫面留在眼睛裡吧，有些風景相機裝不下，只能用心記。</p><p>晚上犒賞自己一盤海鮮飯。當海鮮飯端上桌的那一刻，26 公里的疲勞直接蒸發一半——番紅花香配滿滿海鮮，在修道院小鎮的夜晚裡，這就是朝聖者最樸實的幸福。今天的蛋白質與澱粉，為明天儲滿能量！</p><figure class="journal-photo"><img alt="當晚餐食：海鮮飯晚餐" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day22/10.jpg" width="1920"/></figure></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Villafranca del Bierzo</h2>

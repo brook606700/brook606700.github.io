@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -317,7 +522,7 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </nav>
 <div class="social-nav" style="text-align:center;padding:0.6rem 0.3rem;background:linear-gradient(135deg,#fafafa,#f0f0f0);border-bottom:1px solid #e8e8e8;font-size:1rem;display:flex;flex-wrap:wrap;justify-content:center;gap:0.3rem"> <a href="https://instagram.com/brook_606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">📷 IG</a> <a href="https://threads.net/@brook_606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">🧵 Threads</a> <a href="https://tiktok.com/@brook_606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">🎵 TikTok</a> <a href="https://youtube.com/@brook606700" style="padding:0.25rem 0.4rem;text-decoration:none;color:#333;font-weight:500;white-space:nowrap">🎬 YouTube</a></div>
 <main><nav aria-label="breadcrumb" style="font-size:0.85rem;color:#888;margin:0 0 1rem;"><a href="https://brook606700.github.io/">首頁</a> › <a href="https://brook606700.github.io/days/">全部日誌</a> › <span aria-current="page">Day 35｜1000公里的句點、火把節、回歸起點</span></nav>
-<div class="route-card camino-ninja"><div class="route-card-main"><div class="route-from"><span class="route-dot">●</span><span>Muxía</span></div><div class="route-arrow"><span>→</span><span class="route-day-badge">Day 35</span><span class="route-diff-badge medium">🚌 歸途</span></div><div class="route-to"><span class="route-dot">📍</span><span>Santiago de Compostela</span></div></div><div class="route-stats"><div class="route-stat"><span class="route-stat-icon">🚶</span><span class="route-stat-label">徒步</span><span class="route-stat-value">3 km</span></div><div class="route-stat"><span class="route-stat-icon">🚌</span><span class="route-stat-label">巴士</span><span class="route-stat-value">約1.5小時</span></div><div class="route-stat"><span class="route-stat-icon">🎆</span><span class="route-stat-label">夜晚</span><span class="route-stat-value">聖胡安節</span></div></div></div>
+<div class="route-card camino-ninja"><div class="route-card-main"><div class="route-from"><span class="route-dot">●</span><span>Muxía</span></div><div class="route-arrow"><span>→</span><span class="route-day-badge">Day 35</span><span class="route-diff-badge medium">🚌 歸途</span></div><div class="route-to"><span class="route-dot">📍</span><span>Santiago de Compostela</span></div></div><div class="route-card-body route-card-body--transit"><div class="route-stats route-stats--transit"><div class="route-stat"><span class="route-stat-icon">🚶</span><span class="route-stat-label">徒步</span><span class="route-stat-value">3 km</span></div><div class="route-stat"><span class="route-stat-icon">🚌</span><span class="route-stat-label">巴士</span><span class="route-stat-value">約1.5小時</span></div><div class="route-stat"><span class="route-stat-icon">🎆</span><span class="route-stat-label">夜晚</span><span class="route-stat-value">聖胡安節</span></div></div><div class="route-transport-panel"><span class="route-transport-icon">🚌</span><div><div class="route-transport-title">交通／移動日</div><div class="route-transport-note">本日以交通移動為主，保留實際交通、抵達與旅程資訊，不虛構徒步海拔曲線。</div></div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day34.html">← Day 34</a><a href="/days/">📓 全部日誌</a><a href="day36.html">Day 36 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">AFTER THE WALK · DAY 35</div><h1 itemprop="headline">Day 35｜1000公里的句點、火把節、回歸起點</h1><p class="article-meta"><time datetime="2026-06-24" itemprop="datePublished">2026 年 6 月 24 日 · Muxía → Santiago de Compostela · 巴士歸途</time></p>
 <hr/>
 <p class="story-lead">今天依舊趕在日出前出發！目的地很近——距離只有 1.5 公里的那座 0 公里石碑。即使聽說這裡已經連著一整個禮拜都是陰天，心裡卻還是抱著一絲期待：希望在世界盡頭看見日出的那一刻。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day35-chapter-1">在 Muxía 醒來，世界盡頭的清晨</a></li><li><a href="#day35-chapter-2">聖母船教堂與 Prestige 海難紀念</a></li><li><a href="#day35-chapter-3">搭車回 Santiago，意外遇見熟悉的人</a></li><li><a href="#day35-chapter-4">火把節的夜晚，替旅程添上最後一幕</a></li></ol></details><section class="story-chapter" id="day35-chapter-1"><h2 class="story-section-title">在 Muxía 醒來，世界盡頭的清晨</h2><figure class="journal-photo"><img alt="礁石釣魚人" class="journal-photo-img" decoding="async" fetchpriority="high" height="900" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/0.jpg" width="1600"/></figure><p>沿著海岸線走，Muxía 的 0 公里石碑赫然出現在眼前；電影《The Way》最後一幕的海邊教堂與礁石，也跟著映入眼簾，畫面真的好不真實！</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="0km石碑背包" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/3-1-1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="倚0km碑望海" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/3-2.jpg" width="1600"/></figure></div><p>原本厚重的雲層裂開了一道縫隙，透出了淡淡的晨光。滿懷期待爬上小山丘，俯瞰整座寧靜的海岸小鎮，等待第一道曙光降臨。剛登上山頂，日出剛好降臨——耶穌光穿透雲層，溫暖的晨光瞬間照亮海岸邊的小屋，在海面上鋪開一條黃金大道。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="雲縫耶穌光" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/3.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="海上日出大道" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/1-1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="山脊日出風車" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/1.jpg" width="1600"/></figure></div><p>站在山丘的石十字架旁看著這幕日出，心裡滿滿的震撼。前天在 Fisterra，我們看著日落沉入大海，向過去告別；而在陰霾了一個禮拜的 Muxía，老天爺送給我們這道日出，象徵著全新的開始。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="小鎮港灣俯瞰" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/2.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="十字架俯瞰鎮" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/2-0.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="十字架海上落日" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/2-1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="石柱望海旅人" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/4.jpg" width="1600"/></figure></div></section><section class="story-chapter" id="day35-chapter-2"><h2 class="story-section-title">聖母船教堂與 Prestige 海難紀念</h2><p>這條路上，你會遇見無數種風景，也會遇見無數種人生的選擇。同行的中國女孩是個徒步老手，頂著脛骨發炎硬撐了好幾天，但在這最後一天，她選擇搭車來到 Muxía。但對一個老手來說，「堅持」往往最簡單，「放棄」才是最難的決定。這條一千公里的路上，有無數個關於堅持與妥協的故事。朝聖之路從來不是一場追求滿分的考試——那些沒能走完的遺憾、那些學會向身體臣服的瞬間，往往比完美的終點，更接近這趟旅程真正的意義。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="0km五人合影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/3-3.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="女孩鐘樓剪影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/6.jpg" width="1600"/></figure></div><p>海邊這座巨大的裂石紀念碑，名字叫做《傷口》。它記載著二十多年前一場嚴重的油輪漏油災難，以及無數志工齊心協力，讓這片死亡海岸浴火重生的故事。難怪人們總說，Fisterra 代表告別，而 Muxía 代表療癒與重生。看著巨石中間的裂縫，象徵走過破碎與疼痛，光，才照得進來。</p><figure class="journal-photo"><img alt="裂石教堂同框" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/5.jpg" width="1600"/></figure><p>走到海邊的礁石區，其中最特別的，就是眼前這塊下方有個洞的「船帆石」！傳說這是聖母瑪利亞石船的一部分，只要從下面這個洞鑽過去九次，就能治好病痛！但洞口很小，它讓我們在終點學會了「彎下腰」——穿過這道石洞，更像是一場古老的洗禮：把沉重與執念，留在這片大海邊，帶走全新的自己。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="教堂雙塔帆船" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/7.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="礁石帆船群" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/7-1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="礁石海岸遠山" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/7-2.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="背影眺教堂海" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/6-1.jpg" width="1600"/></figure></div></section><section class="story-chapter" id="day35-chapter-3"><h2 class="story-section-title">搭車回 Santiago，意外遇見熟悉的人</h2><p>眼前的「聖母石船教堂」，就這樣佇立在海浪與巨石邊，幾百年來靜靜守候著每一位走到世界盡頭的旅人。翻開寫滿故事的朝聖者護照，蓋下最後一枚印章——一千多公里、一步一腳印的最終證明。在這一刻，畫下了最圓滿的句點。</p><figure class="journal-photo"><img alt="護照滿滿印章" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/7-4.jpg" width="1600"/></figure><p>告別了世界盡頭，我們排進朝聖者的隊伍，搭上返回聖地牙哥的巴士。雙腳走了好幾天的路，如今只要一個多小時就能輕鬆回到原點。踏上巴士的這一刻，才真正意識到：徒步的日子結束了，我們準備回到現實世界了。</p><p>回到聖地牙哥，今晚落腳的私人庇護所剛好就在車站旁。這裡的老闆非常熱情，不僅請我吃了燉肉，還拿出特別的酒來乾杯慶祝。我印了一張拍立得送給老闆留念，沒想到他竟把它視若珍寶，跟各國紙鈔一起掛起——這份人情味特別溫暖。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="庇護所通鋪房" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/9.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="燉肉麵包紅酒" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/10.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="拍立得紙鈔牆" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/8.jpg" width="1600"/></figure></div></section><section class="story-chapter" id="day35-chapter-4"><h2 class="story-section-title">火把節的夜晚，替旅程添上最後一幕</h2><p>但今天還沒結束！重新走回聖地牙哥大教堂的廣場，感受這座城市入夜前的活力。走著走著突然被叫住，竟然是群組的台灣網友認出我！他送了一張台灣味的手繪貼紙，異國他鄉的相遇真的超暖。相逢就是有緣，挑了家網紅餐廳慶祝——沒想到竟然大踩雷！</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="護照手繪貼紙" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/11.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="海鮮燉飯近拍" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/12.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="牛排薯條拼盤" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/14.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="冰淇淋可麗餅" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/13.jpg" width="1600"/></figure></div><p>夜幕降臨，今晚的重頭戲才正要開始——點亮整座城市的「火把節」！這是西班牙著名的「聖胡安節」，人們用篝火迎接夏至，象徵燒掉過去的厄運與淨化身心。按照傳統，只要成功跳過篝火，就能帶來滿滿的好運！我們當下也熱血地跟著跳——結果現實是，剛走完一千多公里的雙腿簡直像是灌了鉛，早就使不上力了！看著整座城市越晚越狂歡，能用這場熱鬧又感動的慶典，為三十幾天的朝聖之路畫下真正的句點，這份回憶真的無價！</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="白晝篝火人群" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/15.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="夜晚廣場篝火" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/16.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="跳火堆瞬間" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day35/17.jpg" width="1600"/></figure></div></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：聖胡安節</h2>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -333,7 +538,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Ponferrada</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -341,17 +548,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 641m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 1256m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">20.7 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>累積下降較多，下坡時留意膝蓋與腳步穩定。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 504m–1,510m</span></div><div class="route-elevation-chart">
+<svg aria-label="Rabanal 至 Ponferrada 的海拔剖面，圖表標尺 504m 至 1,510m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 21 路線海拔剖面</title><desc>Rabanal 出發，前往 Ponferrada。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d21" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.30"></stop>
@@ -361,20 +567,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e74c3c"></stop>
 <stop offset="100%" stop-color="#c0392b"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,51.6 L 65.7,50.8 L 76.4,49.6 L 87.1,47.9 L 97.9,46.8 L 108.6,45.8 L 119.3,44.3 L 130.0,42.9 L 140.7,41.7 L 151.4,40.2 L 162.1,38.3 L 172.9,36.5 L 183.6,34.9 L 194.3,32.9 L 205.0,30.9 L 215.7,29.4 L 226.4,27.6 L 237.1,25.5 L 247.9,24.3 L 258.6,24.1 L 269.3,24.3 L 280.0,24.8 L 290.7,26.1 L 301.4,27.5 L 312.1,28.9 L 322.9,30.9 L 333.6,33.6 L 344.3,36.3 L 355.0,39.5 L 365.7,43.6 L 376.4,47.8 L 387.1,51.4 L 397.9,55.3 L 408.6,59.4 L 419.3,62.9 L 430.0,66.2 L 440.7,69.9 L 451.4,73.5 L 462.1,76.6 L 472.9,80.0 L 483.6,83.7 L 494.3,87.1 L 505.0,90.4 L 515.7,93.7 L 526.4,96.8 L 537.1,98.8 L 547.9,100.5 L 558.6,101.9 L 569.3,102.4 L 580.0,102.5 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d21)"></path>
 <path d="M 55.0,51.6 L 65.7,50.8 L 76.4,49.6 L 87.1,47.9 L 97.9,46.8 L 108.6,45.8 L 119.3,44.3 L 130.0,42.9 L 140.7,41.7 L 151.4,40.2 L 162.1,38.3 L 172.9,36.5 L 183.6,34.9 L 194.3,32.9 L 205.0,30.9 L 215.7,29.4 L 226.4,27.6 L 237.1,25.5 L 247.9,24.3 L 258.6,24.1 L 269.3,24.3 L 280.0,24.8 L 290.7,26.1 L 301.4,27.5 L 312.1,28.9 L 322.9,30.9 L 333.6,33.6 L 344.3,36.3 L 355.0,39.5 L 365.7,43.6 L 376.4,47.8 L 387.1,51.4 L 397.9,55.3 L 408.6,59.4 L 419.3,62.9 L 430.0,66.2 L 440.7,69.9 L 451.4,73.5 L 462.1,76.6 L 472.9,80.0 L 483.6,83.7 L 494.3,87.1 L 505.0,90.4 L 515.7,93.7 L 526.4,96.8 L 537.1,98.8 L 547.9,100.5 L 558.6,101.9 L 569.3,102.4 L 580.0,102.5" fill="none" stroke="url(#line-grad-d21)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="51.6" fill="#e74c3c" r="3"></circle>
 <circle cx="580.0" cy="102.5" fill="#c0392b" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">504m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">1510m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">Rabanal</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Ponferrada</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● Rabanal</span><span>Ponferrada ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day20.html">← Day 20</a><a href="/days/">📓 全部日誌</a><a href="day22.html">Day 22 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 21</div><h1 itemprop="headline">Day 21｜鐵十字架、放下石頭、膝蓋不是自己的</h1><p class="article-meta"><time datetime="2026-06-10" itemprop="datePublished">2026 年 6 月 10 日 · Rabanal del Camino → Ponferrada · 31km</time></p>
 <hr/>
 <p class="story-lead">第 21 天，清晨出發，氣溫大概只剩下 5 度。走了三個禮拜，這是我難得覺得有點冷的一個早晨。天還沒亮，我們就踩著滿地的碎石坡摸黑往上爬，每一步都踩得小心翼翼，迎著漸漸升起的日出，一路往高處走。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day21-chapter-1">濃霧散開，今天要走向鐵十字架</a></li><li><a href="#day21-chapter-2">Cruz de Ferro：把石頭留下，也把重量放下</a></li><li><a href="#day21-chapter-3">陡下坡考驗膝蓋，Ponferrada 近了</a></li><li><a href="#day21-chapter-4">走進聖殿騎士城堡旁的夜晚</a></li></ol></details><section class="story-chapter" id="day21-chapter-1"><h2 class="story-section-title">濃霧散開，今天要走向鐵十字架</h2><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="清晨摸黑爬上碎石坡迎接日出" class="journal-photo-img" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="碎石坡上的日出晨光" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/1-1.jpg" width="1920"/></figure></div><p>走出那段折磨人的碎石坡，清晨的霧氣還很濃，陽光從雲層裡探出頭來，灑在路面上。我們就在這片寧靜裡，一步一步順著這條光影交錯的路往前走，霧散開又聚攏，每個轉彎都像換了一個場景。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="濃霧中灑落陽光的光影之路" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/2.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="霧氣瀰漫的山間小徑" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/2-0-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="霧中透光的朝聖之路" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/2-0-2.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="陽光穿透霧氣的路段" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/2-1.jpg" width="1920"/></figure></div><p>走過路邊這座安靜的木製十字架，我們繼續往高點推進。轉個身回頭望去，整片雲海正如同瀑布般安靜地漫過遠方的山頭，耀眼的陽光灑下來，這一刻整個世界都安靜了。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="路邊安靜佇立的木製十字架" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/3.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="漫過山頭的雲海瀑布" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/3-1.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day21-chapter-2"><h2 class="story-section-title">Cruz de Ferro：把石頭留下，也把重量放下</h2><p>抬頭一看，濃霧裡竟然掛著一道純白色的彩虹。這不是眼花，是罕見的「霧虹」——因為水滴太小，折射不出色彩，只留下純白。能在濃霧裡撞見，氣氛真的超級魔幻，我盯著看了好久捨不得走。</p><figure class="journal-photo"><img alt="濃霧中罕見的純白色霧虹" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/4.jpg" width="1920"/></figure><p>終於抵達法國之路的最高點——鐵十字架（Cruz de Ferro）。這大概是我見過最安靜、最有力量的畫面，濃霧中透著一種莊嚴又平靜的氣息。幾百年來，朝聖者們都會帶著石頭跨越千山萬水，最後在這裡放下。這顆石頭，裝著每個人心裡的執念、遺憾，或是放不下的重擔。我攤開手，看著這顆寫著「Buen Camino」的石頭，其實我沒有特別想放下什麼，但當石頭輕輕放上石堆，把過去留在這片大霧之中，心裡突然有了一種說不出的輕鬆。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="濃霧中的鐵十字架全景" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/5.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="寫著Buen Camino的石頭特寫" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/5-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="堆滿朝聖者石頭的石堆" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/5-2.jpg" width="1920"/></figure></div><p>今天總里程 31 公里，爬升 641 公尺，下降卻高達 1256 公尺。光看數字你可能覺得還好，但只有真正踩在碎石坡裡的人才知道，有時候下山遠比上山還要難。我的思緒還停留在剛剛的鐵十字架——那是一根毫不華麗的木桿，底下卻是一整座由朝聖者用幾百年堆疊出來的石頭山，每一顆石頭都藏著一個人的秘密，堆滿了無數的遺憾、執念，甚至是那些我們早就該改掉的陋習。</p></section><section class="story-chapter" id="day21-chapter-3"><h2 class="story-section-title">陡下坡考驗膝蓋，Ponferrada 近了</h2><p>我們總以為放下就是忘記，其實不是。放下不是否定那些已經發生的，而是承認那件事的重量已經足夠了，不需要再把它當成每天的行李。我們常常不敢放下，是因為害怕一旦失去這個重擔，自己就變得空洞，可是當你真的把手鬆開，你會發現你什麼都沒失去，你只是終於把雙手空了出來，去擁抱接下來的人生。放下石頭後轉身面對的，依然是殘酷的下山路，腳下的碎石依舊難走，身體也不會因為一個神聖的儀式就長出翅膀。</p><p>這也許就是人生最誠實的地方：放下不會讓問題立刻消失，山沒有變矮，路也沒有變平。</p><figure class="journal-photo"><img alt="漫長陡峭的碎石下坡路" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/6.jpg" width="1920"/></figure><p>切換越野跑模式！注意踩點、順著慣性往下奔跑，迎著風，我知道心裡真的有一個地方鬆了一點，這一刻心情是愉悅的。這段連續陡降真的超硬，前面的單車騎士正小心翼翼地下坡，我則一路緊跟在後，專注踩點往下衝，這種腎上腺素狂飆的快感真的太爽了，膝蓋什麼的先擺一邊再說。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="越野跑姿態衝下碎石陡坡" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/7.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="陡降路段小心下坡的單車騎士" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/8-2.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day21-chapter-4"><h2 class="story-section-title">走進聖殿騎士城堡旁的夜晚</h2><p>一進到這座總人口不到 20 人的迷你小鎮，路旁卻藏著這座充滿溫度的「自由捐贈」果汁攤。這份甘甜，是昨天的朝聖者為我們留下的，而我們今天放下的硬幣，將會變成明天另一位朝聖者繼續往前的力量。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="迷你小鎮路旁的自由捐贈果汁攤" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/8.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="果汁攤上的自由捐贈小費箱" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/8-1.jpg" width="1920"/></figure></div><p>終於下山啦！入城前會先經過這座壯觀的教堂，鎮上噴泉旁邊這根石柱上面竟然寫著滿滿的日文，仔細一看，是來自日本四國遍路的友好紀念碑——在西班牙的朝聖路上遇見日本的朝聖文化，這連結也太奇妙了。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="寫滿日文的四國遍路友好紀念石柱" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/8-3-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="入城前經過的壯觀教堂" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/8-3.jpg" width="1920"/></figure></div><p>終於抵達今天的終點 Ponferrada！今晚入住這間採光超好的公立庇護所，庇護所內還有這個里程碑——距離終點聖地亞哥只剩最後 210 公里了，看到數字的瞬間真的全身起雞皮疙瘩。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="採光超好的Ponferrada公立庇護所" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/8-4.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="距離聖地亞哥剩210公里的里程碑" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/9.jpg" width="1920"/></figure></div><p>這座小鎮有著氣勢磅礡的聖殿騎士團城堡，宛如電影場景。中世紀時朝聖之路荒涼又充滿強盜，這群胸前畫著紅十字的精英騎士為了保護朝聖者，沿路修建堡壘與醫院，堪稱「朝聖者保鑣」。數百年後騎士雖已不在，雕像至今依然靜靜守護著我們，走在城牆下真的會起雞皮疙瘩。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="氣勢磅礡的聖殿騎士團城堡外觀" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/10.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="城堡石牆與塔樓近景" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/10-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="守護朝聖者的騎士雕像" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/11.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="夕陽下的城堡城牆漫步" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/12.jpg" width="1920"/></figure></div><p>晚上自己下廚，香煎雞腿配紅酒！用滿滿的蛋白質為今天劃下完美收尾，31 公里的疲勞都在這一口肉香裡被治癒了。</p><figure class="journal-photo"><img alt="自煮香煎雞腿配紅酒晚餐" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day21/13.jpg" width="1920"/></figure></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Cruz de Ferro</h2>

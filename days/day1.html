@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -295,6 +296,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -330,7 +535,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Roncesvalles</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -338,17 +545,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 1480m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 720m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">59.2 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>累積爬升較大，放慢節奏並為長坡保留體力。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 160m–1,460m</span></div><div class="route-elevation-chart">
+<svg aria-label="SJPP 至 Roncesvalles 的海拔剖面，圖表標尺 160m 至 1,460m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 1 路線海拔剖面</title><desc>SJPP 出發，前往 Roncesvalles。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d1" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.30"></stop>
@@ -358,20 +564,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e74c3c"></stop>
 <stop offset="100%" stop-color="#c0392b"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,102.9 L 65.7,99.3 L 76.4,95.2 L 87.1,91.2 L 97.9,87.3 L 108.6,84.1 L 119.3,80.5 L 130.0,77.1 L 140.7,74.3 L 151.4,71.4 L 162.1,68.1 L 172.9,65.4 L 183.6,62.6 L 194.3,59.6 L 205.0,56.7 L 215.7,54.5 L 226.4,52.4 L 237.1,50.1 L 247.9,48.0 L 258.6,46.1 L 269.3,43.9 L 280.0,41.6 L 290.7,39.6 L 301.4,37.3 L 312.1,34.8 L 322.9,32.6 L 333.6,30.6 L 344.3,28.5 L 355.0,26.7 L 365.7,25.2 L 376.4,23.6 L 387.1,22.4 L 397.9,22.2 L 408.6,23.0 L 419.3,23.9 L 430.0,25.0 L 440.7,26.6 L 451.4,28.2 L 462.1,29.7 L 472.9,31.5 L 483.6,33.6 L 494.3,35.6 L 505.0,37.7 L 515.7,40.5 L 526.4,43.3 L 537.1,45.8 L 547.9,48.1 L 558.6,50.5 L 569.3,52.2 L 580.0,53.2 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d1)"></path>
 <path d="M 55.0,102.9 L 65.7,99.3 L 76.4,95.2 L 87.1,91.2 L 97.9,87.3 L 108.6,84.1 L 119.3,80.5 L 130.0,77.1 L 140.7,74.3 L 151.4,71.4 L 162.1,68.1 L 172.9,65.4 L 183.6,62.6 L 194.3,59.6 L 205.0,56.7 L 215.7,54.5 L 226.4,52.4 L 237.1,50.1 L 247.9,48.0 L 258.6,46.1 L 269.3,43.9 L 280.0,41.6 L 290.7,39.6 L 301.4,37.3 L 312.1,34.8 L 322.9,32.6 L 333.6,30.6 L 344.3,28.5 L 355.0,26.7 L 365.7,25.2 L 376.4,23.6 L 387.1,22.4 L 397.9,22.2 L 408.6,23.0 L 419.3,23.9 L 430.0,25.0 L 440.7,26.6 L 451.4,28.2 L 462.1,29.7 L 472.9,31.5 L 483.6,33.6 L 494.3,35.6 L 505.0,37.7 L 515.7,40.5 L 526.4,43.3 L 537.1,45.8 L 547.9,48.1 L 558.6,50.5 L 569.3,52.2 L 580.0,53.2" fill="none" stroke="url(#line-grad-d1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="102.9" fill="#e74c3c" r="3"></circle>
 <circle cx="580.0" cy="53.2" fill="#c0392b" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">160m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">1460m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">SJPP</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Roncesvalles</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● SJPP</span><span>Roncesvalles ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day0.html">← Day 0</a><a href="/days/">📓 全部日誌</a><a href="day2.html">Day 2 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 01</div><h1 itemprop="headline">Day 1｜1480m、六千大卡、老奶奶的生日</h1><p class="article-meta"><time datetime="2026-05-21" itemprop="datePublished">2026 年 5 月 21 日 · SJPP → Roncesvalles</time></p>
 <hr/>
 <p class="story-lead">清晨六點，13 度的空氣涼得讓人清醒。微涼的風中夾雜著咖啡與麵包的香氣。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day1-chapter-1">清晨六點，從 SJPP 正式出發</a></li><li><a href="#day1-chapter-2">一步一步攀上庇里牛斯山</a></li><li><a href="#day1-chapter-3">山徑上的相遇與跨越國境</a></li><li><a href="#day1-chapter-4">抵達 Roncesvalles，讓疲憊慢慢沉澱</a></li><li><a href="#day1-chapter-5">第一天的夜晚：祝福與提醒</a></li></ol></details><section class="story-chapter" id="day1-chapter-1"><h2 class="story-section-title">清晨六點，從 SJPP 正式出發</h2><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：清晨六點，13 度的空氣涼得讓人清醒。" class="journal-photo-img" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：清晨六點，13 度的空氣涼得讓人清醒。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/2.jpg" width="1920"/></figure></div><p>吃完 Gîte BIDEAN 提供的 6 歐元早餐，我們昨晚做了一個最棒的決定，花 8 歐元把不必要的行李寄到下一個小鎮。雖然第一天體力滿血，但這是一場 30 多天的長期抗戰，每一公斤都會在往後的日子裡被放大十倍。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：吃完 Gîte BIDEAN 提供的 6 歐元早餐，我們昨晚做了一個最棒的決定，花 8 歐元把不必要的行李寄到下一個…" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/3.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：吃完 Gîte BIDEAN 提供的 6 歐元早餐，我們昨晚做了一個最棒的決定，花 8 歐元把不必要的行李寄到下一個…" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/4.jpg" width="1920"/></figure></div><p>穿過古老的城牆，我們正式踏入法國之路。迎接我們的，是無盡的陡峭上坡。但幸運的是，當第一縷晨曦穿透雲層，山谷間灑下了絕美的耶穌光，彷彿在為我們這群即將翻山越嶺的人獻上祝福。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：穿過古老的城牆，我們正式踏入法國之路。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/5.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：穿過古老的城牆，我們正式踏入法國之路。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/6.jpg" width="1920"/></figure></div><p>1480 公尺的攀升。這不是數字，是每一口急促的呼吸中，站在山腳下時，看著那陡坡，看著那隱沒在雲霧裡的險峻山頭，心裡其實是畏縮的。但當你真正踏上去後，你會發現，山雖然高，路雖然險，但只要節奏慢一點，呼吸穩一點，一步、再一步，山路竟也慢慢在腳下攤平了。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：1480 公尺的攀升。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/7.jpg" width="1919"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：1480 公尺的攀升。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/8.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day1-chapter-2"><h2 class="story-section-title">一步一步攀上庇里牛斯山</h2><p>直到某一刻，當我停下腳步回頭望向來時的路，都已成了腳下的風景。那一刻，心中升起的不再是對山的敬畏，而是對那個「勇敢的自己」，一份深深的佩服。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：直到某一刻，當我停下腳步回頭望向來時的路，都已成了腳下的風景。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/9.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：直到某一刻，當我停下腳步回頭望向來時的路，都已成了腳下的風景。" class="journal-photo-img" decoding="async" height="1079" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/10.jpg" width="1920"/></figure></div><p>隨著海拔攀升，沿途充滿了自然的野性。奔跑的馬群、羊群，甚至一具風化的馬骨，都在提醒著生命的脆弱與循環。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：隨著海拔攀升，沿途充滿了自然的野性。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/11.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：隨著海拔攀升，沿途充滿了自然的野性。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/12-1.jpg" width="1920"/></figure></div><p>路上，我們遇到了來自台灣的 VAN，也遇到了一對可愛的老夫妻。我用拍立得幫他們合影，興奮地大喊「Give me five!」，結果他們誤以為我要討 5 歐元，嚇得連連搖頭。雖然語言不通，但化解尷尬的真誠笑容，成了這段路上最笨拙卻也最迷人的相遇。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：路上，我們遇到了來自台灣的 VAN，也遇到了一對可愛的老夫妻。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/12.jpg" width="1919"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：路上，我們遇到了來自台灣的 VAN，也遇到了一對可愛的老夫妻。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/13.jpg" width="1920"/></figure></div><p>在山巔附近，在腳下看見一塊形狀酷似台灣、貼著國旗的石頭。在那幾千公里外的異鄉，這塊石頭給了我最溫暖的歸屬感。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：在山巔附近，在腳下看見一塊形狀酷似台灣、貼著國旗的石頭。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/14.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：在山巔附近，在腳下看見一塊形狀酷似台灣、貼著國旗的石頭。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/15.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day1-chapter-3"><h2 class="story-section-title">山徑上的相遇與跨越國境</h2><p>中午氣溫逼近 30 度，翻越最高點，迎來了這處及時的補水點。這口清甜的山泉水是自然給予最好的獎賞。這份來自深山的冰涼，不僅潤澤了乾涸的喉嚨，也帶走了豔陽下長途跋涉後的滿身燥熱。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：中午氣溫逼近 30 度，翻越最高點，迎來了這處及時的補水點。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/16.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：中午氣溫逼近 30 度，翻越最高點，迎來了這處及時的補水點。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/17.jpg" width="1920"/></figure></div><p>穿過接近 1,500 公尺的最高點，我們正式從法國的庇里牛斯山，踏入了西班牙的領土。這不僅是地理上的跨越，更是心境上的轉變。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：穿過接近 1,500 公尺的最高點，我們正式從法國的庇里牛斯山，踏入了西班牙的領土。" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/18.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：穿過接近 1,500 公尺的最高點，我們正式從法國的庇里牛斯山，踏入了西班牙的領土。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/19.jpg" width="1920"/></figure></div><p>進入茂密的樹林後，從前段的上升轉為下坡路段，濕軟的樹葉，每一步都像踩在棉花上，然而我的雙腳並沒有因此變得輕鬆，「俗話說『上山靠肺，下山靠膝蓋』，這句話在今天的下坡段得到了最深刻的印證。雙腿因為早上的爬升過度疲勞在下坡時開始不停顫抖，考驗著身體與意志的堅韌。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：進入茂密的樹林後，從前段的上升轉為下坡路段，濕軟的樹葉，每一步都像踩在棉花上，然而我的雙腳並沒有因此變得輕鬆，「俗話…" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/20.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：進入茂密的樹林後，從前段的上升轉為下坡路段，濕軟的樹葉，每一步都像踩在棉花上，然而我的雙腳並沒有因此變得輕鬆，「俗話…" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/21.jpg" width="1920"/></figure></div><p>下午，當我終於拖著發抖的雙腿下山，抵達 Roncesvalles 修道院，入門後是大排長龍的等待入住的朝聖者，記得一定要從官網提前預訂，因為第一天的朝聖者通常都住宿在這，價格是 14 歐元。入住庇護所，鞋子必須整齊地放在專屬區域，以保持公共空間的乾淨與清香。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：下午，當我終於拖著發抖的雙腿下山，抵達 Roncesvalles 修道院，入門後是大排長龍的等待入住的朝聖者，記得一…" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/22.jpg" width="1919"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：下午，當我終於拖著發抖的雙腿下山，抵達 Roncesvalles 修道院，入門後是大排長龍的等待入住的朝聖者，記得一…" class="journal-photo-img" decoding="async" height="1280" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/23.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day1-chapter-4"><h2 class="story-section-title">抵達 Roncesvalles，讓疲憊慢慢沉澱</h2><p>來到我的床位，早上在山上遇到的台灣人 VAN，竟然就睡在我下鋪！這就是朝聖之路的奇妙緣分，總在不經意間，將來自世界各地的人們連結在一起。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：來到我的床位，早上在山上遇到的台灣人 VAN，竟然就睡在我下鋪！" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/24-1.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：來到我的床位，早上在山上遇到的台灣人 VAN，竟然就睡在我下鋪！" class="journal-photo-img" decoding="async" height="1071" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/24.jpg" width="1920"/></figure></div><p>當晚，一份 16 歐元的朝聖者晚餐成了我們的救贖。晚餐席間，得知同桌一位年過六旬的法國姊姊今天生日。在紅酒與歡笑中，我拿出拍立得為她記錄下這瞬間，這份跨越國界與年齡的溫暖，悄然在歡笑中悄然蔓延。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：當晚，一份 16 歐元的朝聖者晚餐成了我們的救贖。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/25.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：當晚，一份 16 歐元的朝聖者晚餐成了我們的救贖。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/26.jpg" width="1920"/></figure></div><p>晚上八點，我們走進了修道院內那座擁有千年歷史的古老教堂，參加專為朝聖者舉辦的彌撒。當神父用各國語言，為來自世界各地的朝聖者祈福時，莊嚴而悠揚的歌聲在古老的石壁間迴蕩，燭光搖曳。那一刻，所有的身體疲憊與心理壓力，彷彿都被徹底洗滌，心靈得到了前所未有的平靜。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：晚上八點，我們走進了修道院內那座擁有千年歷史的古老教堂，參加專為朝聖者舉辦的彌撒。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/27.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：晚上八點，我們走進了修道院內那座擁有千年歷史的古老教堂，參加專為朝聖者舉辦的彌撒。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/28.jpg" width="1920"/></figure></div></section><section class="story-chapter" id="day1-chapter-5"><h2 class="story-section-title">第一天的夜晚：祝福與提醒</h2><p>第一天，我們在 1,480 公尺的垂直攀升中，與身體進行了一場深刻的對話。30 度的高溫炙烤與超過 6,000 大卡的體能消耗，是這條路給予我們的第一份考驗。我們是幸運的。就在出發的前一週，這條山徑才剛以一場大雪示威，讓三位朝聖者永遠留在了歸途之外。這提醒著我們，朝聖之路從不保證一路順風。</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：第一天，我們在 1,480 公尺的垂直攀升中，與身體進行了一場深刻的對話。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/29.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：第一天，我們在 1,480 公尺的垂直攀升中，與身體進行了一場深刻的對話。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/30.jpg" width="1920"/></figure></div><p>此刻已是五月底，夏天的腳步近了，直到晚上十點，金黃色的夕陽仍不願離去。在這漫長的白晝裡，我們的故事，才剛剛開始。Buen Camino！</p><div aria-label="沿途照片" class="photo-gallery"><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：此刻已是五月底，夏天的腳步近了，直到晚上十點，金黃色的夕陽仍不願離去。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/31.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：此刻已是五月底，夏天的腳步近了，直到晚上十點，金黃色的夕陽仍不願離去。" class="journal-photo-img" decoding="async" height="1440" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/32.jpg" width="1920"/></figure><figure class="journal-photo"><img alt="Day 1｜Roncesvalles 朝聖之路實走紀錄：此刻已是五月底，夏天的腳步近了，直到晚上十點，金黃色的夕陽仍不願離去。" class="journal-photo-img" decoding="async" height="1080" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day1/33.jpg" width="1920"/></figure></div></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Roncesvalles</h2>

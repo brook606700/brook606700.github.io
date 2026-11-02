@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="zh-TW">
 <head>
@@ -298,6 +299,210 @@ article h1{line-height:1.3;letter-spacing:.01em}
 .photo-appendix .photo-gallery{margin-top:1rem}
 .article-end-note{margin:2rem 0;padding:1rem 1.25rem;border-left:3px solid #b98546;background:#f1e9dc;border-radius:0 14px 14px 0;line-height:1.9}
 @media(max-width:650px){.story-toc ol{grid-template-columns:1fr}.photo-gallery{grid-template-columns:1fr;gap:14px}.story-chapter{margin:1.7rem 0 2rem}.story-chapter p{font-size:1rem;line-height:1.95}.journal-photo img,.photo-gallery img{border-radius:11px}}
+</style><style id="camino-route-profile-v3">
+/* Compact route / elevation summary — applied consistently to Day 1–34 */
+.route-card.camino-ninja,
+.route-card.route-card--transit {
+  max-width: 980px !important;
+  margin: .8rem auto 1.15rem !important;
+  padding: .9rem 1rem !important;
+  border: 1px solid #ead9c3 !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg,#fffdf9 0%,#f7eddf 100%) !important;
+  box-shadow: 0 8px 24px rgba(91,67,39,.07) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-card-main {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: .65rem !important;
+  min-height: 42px !important;
+}
+.route-card .route-from,
+.route-card .route-to {
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .42rem !important;
+  color: #51402d !important;
+  font-size: clamp(.85rem,1.7vw,1rem) !important;
+  line-height: 1.35 !important;
+  font-weight: 800 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-to { justify-content: flex-end !important; text-align: right !important; }
+.route-card .route-arrow {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: .4rem !important;
+  color: #9b6d37 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-arrow > span:first-child { font-size: 1.1rem !important; }
+.route-card .route-day-badge,
+.route-card .route-diff-badge {
+  border-radius: 999px !important;
+  padding: .24rem .52rem !important;
+  font-size: .7rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+.route-card .route-card-body {
+  display: grid !important;
+  grid-template-columns: minmax(220px,.72fr) minmax(0,1.65fr) !important;
+  align-items: stretch !important;
+  gap: .8rem !important;
+  margin-top: .7rem !important;
+}
+.route-card .route-metrics-column {display:flex !important;flex-direction:column !important;gap:.5rem !important;min-width:0 !important;justify-content:space-between !important;}
+.route-card .route-stats {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  align-content: start !important;
+  grid-auto-rows: minmax(50px,auto) !important;
+  gap: .48rem !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+.route-card .route-stat {
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: 21px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  align-content: center !important;
+  column-gap: .35rem !important;
+  row-gap: .05rem !important;
+  min-height: 50px !important;
+  padding: .46rem .55rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.82) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-stat-icon {
+  grid-column: 1 !important; grid-row: 1 / span 2 !important;
+  align-self: center !important; font-size: 1rem !important;
+}
+.route-card .route-stat-label {
+  grid-column: 2 !important; grid-row: 1 !important;
+  color: #8b765d !important; font-size: .68rem !important;
+  line-height: 1.2 !important; white-space: nowrap !important;
+}
+.route-card .route-stat-value {
+  grid-column: 2 !important; grid-row: 2 !important;
+  color: #704c29 !important; font-size: .95rem !important;
+  line-height: 1.25 !important; font-weight: 850 !important;
+  overflow-wrap: anywhere !important;
+}
+.route-card .route-stat--derived { background: #f8f0e5 !important; }
+.route-card .route-load-note {padding:.48rem .62rem !important;border-radius:11px !important;background:#f4eadb !important;border-left:3px solid #c69a63 !important;color:#7e6548 !important;font-size:.69rem !important;line-height:1.45 !important;}
+.route-card .route-load-note strong {display:block !important;color:#715333 !important;font-size:.68rem !important;margin-bottom:.08rem !important;}
+.route-card .route-stat--derived .route-stat-value { font-size: .88rem !important; }
+.route-card .route-elevation-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: .62rem .72rem .48rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.7) !important;
+  box-sizing: border-box !important;
+}
+.route-card .route-elevation-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .5rem !important;
+  margin-bottom: .15rem !important;
+}
+.route-card .route-elevation-title {
+  color: #665039 !important; font-size: .78rem !important;
+  font-weight: 850 !important; letter-spacing: .02em !important;
+}
+.route-card .route-elevation-range {
+  color: #8a7358 !important; background: #f4eadb !important;
+  border-radius: 999px !important; padding: .2rem .48rem !important;
+  font-size: .67rem !important; font-weight: 750 !important;
+  white-space: nowrap !important;
+}
+.route-card .route-elevation-chart {
+  width: 100% !important; min-width: 0 !important;
+  margin: .12rem 0 .05rem !important;
+  overflow: hidden !important;
+}
+.route-card .route-elevation-chart svg,
+.route-card .route-elevation-chart .elevation-chart {
+  display: block !important; width: 100% !important;
+  max-width: none !important; height: 88px !important;
+  margin: 0 !important; preserveAspectRatio: none;
+}
+.route-card .route-elevation-axis {
+  display: flex !important; align-items: center !important;
+  justify-content: space-between !important; gap: .75rem !important;
+  margin-top: .02rem !important; color: #806a51 !important;
+  font-size: .69rem !important; line-height: 1.25 !important;
+}
+.route-card .route-elevation-axis span { min-width: 0 !important; overflow-wrap: anywhere !important; }
+.route-card .route-elevation-axis span:last-child { text-align: right !important; }
+.route-card .route-elevation-footnote {
+  margin-top: .28rem !important; color: #9a8977 !important;
+  font-size: .68rem !important; line-height: 1.4 !important;
+}
+.route-card .route-transport-panel {
+  display: flex !important; align-items: center !important;
+  gap: .65rem !important; min-width: 0 !important;
+  padding: .72rem .85rem !important;
+  border: 1px solid rgba(220,202,177,.72) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.72) !important;
+}
+.route-card .route-transport-icon { font-size: 1.55rem !important; flex: 0 0 auto !important; }
+.route-card .route-transport-title { color: #665039 !important; font-weight: 850 !important; font-size: .82rem !important; }
+.route-card .route-transport-note { color: #8a7762 !important; font-size: .7rem !important; line-height: 1.45 !important; margin-top: .1rem !important; }
+.route-card .route-card-body--transit { grid-template-columns: minmax(0,1fr) minmax(190px,.7fr) !important; }
+.route-card .route-stats--transit { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+.route-card .route-stats--transit .route-stat { min-height: 58px !important; }
+.route-card .route-card-body--nonwalk { grid-template-columns: 1fr !important; }
+@media (max-width: 680px) {
+  .route-card.camino-ninja,.route-card.route-card--transit { padding: .78rem !important; border-radius: 15px !important; }
+  .route-card .route-card-main { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) !important; gap: .3rem !important; }
+  .route-card .route-from,.route-card .route-to { font-size: .78rem !important; gap: .25rem !important; }
+  .route-card .route-arrow { gap: .25rem !important; flex-wrap: wrap !important; }
+  .route-card .route-day-badge,.route-card .route-diff-badge { font-size: .61rem !important; padding: .2rem .38rem !important; }
+  .route-card .route-card-body { grid-template-columns: 1fr !important; gap: .55rem !important; margin-top: .55rem !important; }
+  .route-card .route-stats { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: .4rem !important; }
+  .route-card .route-stat { min-height: 49px !important; padding: .38rem .45rem !important; }
+  .route-card .route-stat-label { font-size: .63rem !important; }
+  .route-card .route-stat-value { font-size: .87rem !important; }
+  .route-card .route-elevation-panel { padding: .52rem .58rem .42rem !important; }
+  .route-card .route-elevation-chart svg,
+  .route-card .route-elevation-chart .elevation-chart { height: 80px !important; }
+  .route-card .route-elevation-range { font-size: .62rem !important; }
+  .route-card .route-elevation-axis { font-size: .64rem !important; }
+  .route-card .route-stats--transit { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card .route-stats--transit .route-stat:last-child {grid-column:1 / -1 !important;}
+  .route-card .route-load-note {display:none !important;}
+  .route-card .route-card-body--transit { grid-template-columns: 1fr !important; }
+  .route-card--prelude .route-journey-steps { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+  .route-card--prelude .route-journey-step:last-child { grid-column: 1 / -1 !important; }
+}
+.route-card--prelude .route-journey-steps {
+  display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  gap:.5rem !important; margin-top:.72rem !important;
+}
+.route-card--prelude .route-journey-step {
+  min-width:0 !important; display:flex !important; flex-direction:column !important;
+  gap:.18rem !important; padding:.55rem .62rem !important;
+  border:1px solid rgba(220,202,177,.72) !important; border-radius:12px !important;
+  background:rgba(255,255,255,.78) !important; box-sizing:border-box !important;
+}
+.route-card--prelude .route-journey-step span {font-size:1.05rem !important}
+.route-card--prelude .route-journey-step strong {color:#704c29 !important;font-size:.72rem !important;line-height:1.3 !important}
+.route-card--prelude .route-journey-step small {color:#8a7762 !important;font-size:.63rem !important;line-height:1.3 !important}
 </style></head>
 <body>
 <header class="site-header">
@@ -333,7 +538,9 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <span>Cee</span>
 </div>
 </div>
-<div class="route-stats">
+
+
+<div class="route-card-body route-card-body--profile"><div class="route-metrics-column"><div class="route-stats">
 <div class="route-stat">
 <span class="route-stat-icon">📏</span>
 <span class="route-stat-label">距離</span>
@@ -341,17 +548,16 @@ article h1{line-height:1.3;letter-spacing:.01em}
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">⛰</span>
-<span class="route-stat-label">爬升</span>
+<span class="route-stat-label">累積爬升</span>
 <span class="route-stat-value">↑ 380m</span>
 </div>
 <div class="route-stat">
 <span class="route-stat-icon">🏔</span>
-<span class="route-stat-label">下降</span>
+<span class="route-stat-label">累積下降</span>
 <span class="route-stat-value">↓ 600m</span>
 </div>
-</div>
-<div class="route-elevation-chart">
-<svg class="elevation-chart" style="width:100%;max-width:600px;height:auto" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+<div class="route-stat route-stat--derived" title="以當日累積爬升除以徒步距離計算，僅供不同日程比較"><span class="route-stat-icon">↗</span><span class="route-stat-label">爬升密度</span><span class="route-stat-value">11.9 m/km</span></div></div><div class="route-load-note"><strong>今日路線提醒</strong><span>依照路線起伏調整步速；穩定前進，比和別人比快更重要。</span></div></div><div class="route-elevation-panel"><div class="route-elevation-head"><span class="route-elevation-title">今日海拔剖面</span><span class="route-elevation-range">圖表標尺 0m–410m</span></div><div class="route-elevation-chart">
+<svg aria-label="Santa Mariña 至 Cee 的海拔剖面，圖表標尺 0m 至 410m" class="elevation-chart route-profile-svg" preserveAspectRatio="none" role="img" style="width:100%;height:88px;display:block;max-width:none" viewBox="0 0 600 130" viewbox="0 0 600 130" xmlns="http://www.w3.org/2000/svg"><title>Day 32 路線海拔剖面</title><desc>Santa Mariña 出發，前往 Cee。本圖沿用原日誌海拔曲線。</desc>
 <defs>
 <lineargradient id="area-grad-d32" x1="0" x2="0" y1="0" y2="1">
 <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.30"></stop>
@@ -361,20 +567,19 @@ article h1{line-height:1.3;letter-spacing:.01em}
 <stop offset="0%" stop-color="#e74c3c"></stop>
 <stop offset="100%" stop-color="#1e8449"></stop>
 </lineargradient>
-</defs>
-<line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="55" y1="20" y2="105"></line>
+</defs><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="70" y2="70"></line><line stroke="#eadfce" stroke-dasharray="3 5" stroke-width="0.8" x1="55" x2="580" xmlns="http://www.w3.org/2000/svg" y1="38" y2="38"></line>
+
 <line stroke="#e0e0e0" stroke-width="0.5" x1="55" x2="580" y1="105" y2="105"></line>
 <path d="M 55.0,25.8 L 65.7,27.0 L 76.4,28.6 L 87.1,30.0 L 97.9,32.3 L 108.6,35.9 L 119.3,38.6 L 130.0,41.2 L 140.7,44.8 L 151.4,47.8 L 162.1,49.1 L 172.9,49.6 L 183.6,48.9 L 194.3,46.3 L 205.0,43.6 L 215.7,42.8 L 226.4,43.3 L 237.1,44.4 L 247.9,47.3 L 258.6,51.1 L 269.3,53.8 L 280.0,55.9 L 290.7,58.6 L 301.4,60.7 L 312.1,61.6 L 322.9,63.1 L 333.6,65.1 L 344.3,66.1 L 355.0,67.3 L 365.7,69.7 L 376.4,72.2 L 387.1,73.9 L 397.9,76.4 L 408.6,79.3 L 419.3,80.9 L 430.0,82.2 L 440.7,84.3 L 451.4,86.1 L 462.1,87.0 L 472.9,88.9 L 483.6,91.4 L 494.3,93.1 L 505.0,94.8 L 515.7,97.7 L 526.4,100.0 L 537.1,101.1 L 547.9,102.9 L 558.6,104.6 L 569.3,104.9 L 580.0,104.6 L 580.0,105.0 L 55.0,105.0 Z" fill="url(#area-grad-d32)"></path>
 <path d="M 55.0,25.8 L 65.7,27.0 L 76.4,28.6 L 87.1,30.0 L 97.9,32.3 L 108.6,35.9 L 119.3,38.6 L 130.0,41.2 L 140.7,44.8 L 151.4,47.8 L 162.1,49.1 L 172.9,49.6 L 183.6,48.9 L 194.3,46.3 L 205.0,43.6 L 215.7,42.8 L 226.4,43.3 L 237.1,44.4 L 247.9,47.3 L 258.6,51.1 L 269.3,53.8 L 280.0,55.9 L 290.7,58.6 L 301.4,60.7 L 312.1,61.6 L 322.9,63.1 L 333.6,65.1 L 344.3,66.1 L 355.0,67.3 L 365.7,69.7 L 376.4,72.2 L 387.1,73.9 L 397.9,76.4 L 408.6,79.3 L 419.3,80.9 L 430.0,82.2 L 440.7,84.3 L 451.4,86.1 L 462.1,87.0 L 472.9,88.9 L 483.6,91.4 L 494.3,93.1 L 505.0,94.8 L 515.7,97.7 L 526.4,100.0 L 537.1,101.1 L 547.9,102.9 L 558.6,104.6 L 569.3,104.9 L 580.0,104.6" fill="none" stroke="url(#line-grad-d32)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 <circle cx="55.0" cy="25.8" fill="#e74c3c" r="3"></circle>
 <circle cx="580.0" cy="104.6" fill="#c0392b" r="3"></circle>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="119">0m</text>
-<text fill="#888" font-size="10" text-anchor="end" x="50" y="30">410m</text>
-<text fill="#666" font-size="10" text-anchor="start" x="55" y="127">Santa Mariña</text>
-<text fill="#666" font-size="10" text-anchor="end" x="580" y="127">Cee</text>
+
+
+
+
 </svg>
-</div>
-</div>
+</div><div class="route-elevation-axis"><span>● Santa Mariña</span><span>Cee ●</span></div><div class="route-elevation-footnote">爬升密度＝累積爬升 ÷ 徒步距離；海拔刻度沿用原始路線圖。</div></div></div></div>
 <a class="back-link" href="/">← 回首頁</a><p class="day-nav" style="display:flex;justify-content:space-between;margin-bottom:1rem;"><a href="day31.html">← Day 31</a><a href="/days/">📓 全部日誌</a><a href="day33.html">Day 33 →</a></p><article class="article journal-article" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/BlogPosting"><div class="day-eyebrow">CAMINO JOURNAL · DAY 32</div><h1 itemprop="headline">Day 32｜Cee、海邊小鎮、啤酒蝦的慰藉</h1><p class="article-meta"><time datetime="2026-06-21" itemprop="datePublished">2026 年 6 月 21 日 · Santa Mariña → Cee · 32km</time></p>
 <hr/>
 <p class="story-lead">第 32 天，天還沒亮就出發，眼前的加利西亞被大霧完全籠罩。今天是一場 32 公里的硬仗。</p><details class="story-toc"><summary>本日閱讀索引｜想先看哪一段？</summary><ol><li><a href="#day32-chapter-1">霧裡出發，鞋子卻意外離隊</a></li><li><a href="#day32-chapter-2">在兩條世界盡頭路線之間做選擇</a></li><li><a href="#day32-chapter-3">第一次看見大西洋，抵達 Cee</a></li><li><a href="#day32-chapter-4">和旅伴一起煮出的海味晚餐</a></li></ol></details><section class="story-chapter" id="day32-chapter-1"><h2 class="story-section-title">霧裡出發，鞋子卻意外離隊</h2><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="濃霧公路車燈" class="journal-photo-img" decoding="async" fetchpriority="high" height="900" loading="eager" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/0.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="霧中徒步背影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="霧中持杖同行" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/1-2.jpg" width="1600"/></figure></div><p>走著走著，太陽漸漸露臉，穿透低空的濃霧，金光瞬間點亮了眼前的一切。霧原上的半輪金日、草坡上迎著日出的旅人、金光霧林裡的獨行——站在小山頭上，地面的視角已經裝不下這份風景，把視角交給天空，穿過雲層，去看看真正的遼闊。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="霧原半日孤樹" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/2.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="霧中蒼白日輪" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/2-0.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="金光霧林獨行" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/2-2.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="草坡迎日旅人" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/2-1.jpg" width="1600"/></figure></div><p>路邊發現一隻落單的鞋子。看著指路石碑，直接用延長竿勾起、穩穩放回石碑上——完全無縫融合，毫無違和感。</p><figure class="journal-photo"><img alt="石碑俯瞰霧谷" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/3.jpg" width="1600"/></figure></section><section class="story-chapter" id="day32-chapter-2"><h2 class="story-section-title">在兩條世界盡頭路線之間做選擇</h2><p>路上認識了兩位外國朋友，一路邊走邊聊。聽說她們知道一條少走冤枉路的小徑，果斷跟著她們的腳步走。至於到底有沒有比較快？看下去就知道。</p><p>前往盡頭的路，是一道選擇題：是先去 Muxía，還是 Fisterra？多數人選 Muxía，因為順路，還能少走 3 公里。但我們選擇了較遙遠的 Fisterra。這不只是路線選擇，更是心靈的順序——因為 Fisterra 象徵「死亡」與放下；而 Muxía 象徵洗滌與「重生」。我們刻意繞遠路，是因為我們相信：先去 Fisterra 告別舊的自己，才能在 Muxía 找回新的靈魂。</p><figure class="journal-photo"><img alt="雙向分岔石碑" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/3-1.jpg" width="1600"/></figure><p>告別山林的狼人雕像，那一抹藍色就這樣毫無防備地出現在眼前。是海！從庇里牛斯山出發，一步一腳印跨越整座半島，今天終於站在這裡看著陸地的邊界。世界盡頭，近在眼前。</p><figure class="journal-photo"><img alt="松間眺望海灣" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/4.jpg" width="1600"/></figure></section><section class="story-chapter" id="day32-chapter-3"><h2 class="story-section-title">第一次看見大西洋，抵達 Cee</h2><p>答案揭曉：所謂的捷徑，純屬美麗的誤會。今天實打實踩滿 32 公里。但抵達今晚的庇護所，溫馨的客廳、充滿朝聖者故事的紀念牆、還有牆上的台灣國旗——美得讓人放鬆。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="港灣小鎮鐘塔" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/5.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="庇護所溫馨客廳" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/5-1.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="紀念牆各國留言" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/5-2.jpg" width="1600"/></figure></div><p>卸下裝備。路過 Cee 廣場的朝聖者地標，套上這雙比臉還大的朝聖鞋，瞬間變得超有喜感。</p><figure class="journal-photo"><img alt="廣場大鞋合影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/5-2-2.jpg" width="1600"/></figure><p>直奔超市商場。好不容易走到海邊，不衝去超市買幾樣海鮮料理一下，怎麼對得起自己！</p><figure class="journal-photo"><img alt="商場手扶梯一隅" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/5-3.jpg" width="1600"/></figure></section><section class="story-chapter" id="day32-chapter-4"><h2 class="story-section-title">和旅伴一起煮出的海味晚餐</h2><p>廚房交給我：啤酒鮮蝦、爆炒牛肉、茄汁義大利麵，快速搞定。外國朋友們紛紛投以羨慕眼光，這頓豐盛晚餐實在太過癮了！</p><figure class="journal-photo"><img alt="鮮蝦牛肉義大利麵" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/5-4.jpg" width="1600"/></figure><p>吃飽喝足，漫步來到海邊。夕陽正緩緩沉入山頭，金黃色的餘暉溫柔地撫平了海浪。俯瞰整座寧靜的海灣與點點漁火——Cee 的夜，安靜得剛好。</p><div aria-label="照片圖集" class="photo-gallery"><figure class="journal-photo"><img alt="夜港燈火倒影" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/6.jpg" width="1600"/></figure><figure class="journal-photo"><img alt="暮色海灣燈火" class="journal-photo-img" decoding="async" height="900" loading="lazy" sizes="(max-width: 680px) 100vw, 880px" src="images/day32/7.jpg" width="1600"/></figure></div></section><hr/><section aria-label="朝聖者小百科" class="camino-encyclopedia"><h2 class="encyclopedia-title">📚 朝聖者小百科：Fisterra 還是 Muxía 先走？</h2>
