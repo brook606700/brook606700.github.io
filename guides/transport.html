@@ -44,6 +44,8 @@ footer{text-align:center;padding:2rem 1rem;color:#8b7355;font-size:.85rem;border
 .hero{position:relative;overflow:hidden;border-radius:25px;padding:clamp(1.5rem,4vw,3.2rem);background:linear-gradient(125deg,#f2dfc7 0%,#fbf4ea 55%,#e9eee8 100%);border:1px solid var(--line);box-shadow:0 10px 30px rgba(61,48,39,.07);display:grid;grid-template-columns:1.08fr .92fr;gap:1.4rem;align-items:center}
 .kicker{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.72);border:1px solid rgba(193,120,23,.2);border-radius:999px;padding:.35rem .8rem;font-size:.78rem;letter-spacing:.08em;color:#8e5c1e;font-weight:700}
 .hero h1{font-size:clamp(2rem,4vw,3.35rem);line-height:1.2;margin:1rem 0 .85rem;color:#33271f;letter-spacing:-.03em}
+h1 .h1-sub{display:block;font-size:.5em;line-height:1.35;letter-spacing:-.01em;margin-top:.42em;color:#5c4c3d}
+.hero p.hero-story{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(1.02rem,1.7vw,1.28rem);font-weight:700;line-height:1.6;color:#6a5949;margin:.2rem 0 .9rem}
 .hero p{font-size:1.02rem;line-height:1.9;color:#665748;max-width:610px;margin:0}
 .hero-note{margin-top:1rem;font-size:.85rem!important;color:#7c6b5c!important}
 .hero-art{min-width:0}.hero-art svg{display:block;width:100%;height:auto;max-height:335px}
@@ -99,7 +101,13 @@ footer{text-align:center;padding:2rem 1rem;color:#8b7355;font-size:.85rem;border
 .resource-button{display:inline-block;padding:.7rem 1rem;border-radius:999px;background:#a9671b;color:white!important;font-weight:750;text-decoration:none!important;font-size:.88rem}.resource-button:hover{background:#895414}
 .quote{border-radius:21px;padding:clamp(1.2rem,3vw,2rem);background:linear-gradient(120deg,#e9efe8,#fbf5e9);border:1px solid #dfe5d8;text-align:center;margin:1.3rem 0}
 .quote p{font-size:clamp(1.1rem,2.5vw,1.45rem);font-weight:750;line-height:1.55;color:#4c5b48;margin:0}.quote small{display:block;margin-top:.6rem;color:#7b816f}
-.source-note{font-size:.76rem;color:#8a7c6d;line-height:1.75;margin-top:1rem}.source-note a{color:#97621d;text-decoration:underline}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:.4rem 0 0;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+  .table-wrap table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
+  .table-wrap th,.table-wrap td{padding:.75rem .9rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.65}
+  .table-wrap th{background:var(--warm);color:#5c4c3d;font-weight:700;font-size:.84rem;white-space:nowrap}
+  .table-wrap tr:last-child td{border-bottom:0}
+  .table-wrap td:first-child{font-weight:700;color:var(--gold);white-space:nowrap}
+  .source-note{font-size:.76rem;color:#8a7c6d;line-height:1.75;margin-top:1rem}.source-note a{color:#97621d;text-decoration:underline}
 @media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{max-width:490px;margin:0 auto}.route-line{grid-template-columns:repeat(3,1fr)}.route-stop:nth-child(3):after{display:none}.process{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.transport-main{padding:1rem .75rem 3rem}.stats{gap:.45rem}.stat{padding:.8rem .65rem}.stat span{font-size:.72rem}.chapter-nav{margin-left:-.75rem;margin-right:-.75rem;padding-left:.75rem}.split,.checklist{grid-template-columns:1fr}.route-line{grid-template-columns:repeat(2,1fr)}.route-stop:nth-child(2n):after{display:none}.route-stop:nth-child(3):after{display:block}.process{gap:.5rem}.process-card{padding:.85rem .55rem}.metric-grid{grid-template-columns:1fr 1fr}.price-row{gap:.5rem}.site-header .tagline{font-size:.82rem}}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -135,12 +143,13 @@ footer{text-align:center;padding:2rem 1rem;color:#8b7355;font-size:.85rem;border
   <section class="hero">
     <div>
       <span class="kicker">CAMINO FRANCÉS · GETTING THERE</span>
-      <h1>從台灣出發，<br>一路抵達朝聖之路起點。</h1>
+      <h1>朝聖之路交通攻略：<span class="h1-sub">台灣出發，經巴黎前往 SJPP</span></h1>
+      <p class="hero-story">從台灣出發，一路抵達朝聖之路起點。</p>
       <p>真正踏上黃色箭頭之前，先得完成一段跨越半個地球的旅程。這裡整理我在 2026 年從台灣出發，經阿布達比、巴黎、Bayonne，最後抵達法國 SJPP 的交通路線與實戰提醒。</p>
       <p class="hero-note">這是一份親身經驗紀錄，不是即時班表。航班、票價、車次與營業時間可能調整，出發前請再以官方網站確認。</p>
     </div>
     <div class="hero-art">
-      <figure style="margin:0"><img src="/guides/images/transport-hero.jpg" alt="台灣飛巴黎經阿布達比轉機，再搭 TGV 到 Bayonne 轉 TER 前往 SJPP 的交通路線圖" style="width:100%;border-radius:18px;display:block" fetchpriority="high"><figcaption style="font-size:.82rem;color:#7d7061;margin-top:.5rem">PARIS → BAYONNE → SJPP：TGV＋TER——台灣出發經阿布達比、巴黎抵達朝聖之路起點</figcaption></figure>
+      <figure style="margin:0"><img decoding="async" src="/guides/images/transport-hero.jpg" srcset="/guides/images/transport-hero-960.jpg 960w, /guides/images/transport-hero.jpg 1600w" alt="台灣飛巴黎經阿布達比轉機，再搭 TGV 到 Bayonne 轉 TER 前往 SJPP 的交通路線圖" style="width:100%;border-radius:18px;display:block" fetchpriority="high" width="1600" height="1096"><figcaption style="font-size:.82rem;color:#7d7061;margin-top:.5rem">PARIS → BAYONNE → SJPP：TGV＋TER——台灣出發經阿布達比、巴黎抵達朝聖之路起點</figcaption></figure>
     </div>
   </section>
 
@@ -151,7 +160,7 @@ footer{text-align:center;padding:2rem 1rem;color:#8b7355;font-size:.85rem;border
   </section>
 
   <nav class="chapter-nav" aria-label="本頁章節">
-    <a href="#route">完整路線</a><a href="#flight">國際航班</a><a href="#paris">巴黎入境</a><a href="#train">TGV 與 TER</a><a href="#sjpp">抵達 SJPP</a><a href="#prep">行前準備</a>
+    <a href="#route">完整路線</a><a href="#steps">📋 流程表</a><a href="#flight">國際航班</a><a href="#paris">巴黎入境</a><a href="#train">TGV 與 TER</a><a href="#sjpp">抵達 SJPP</a><a href="#prep">行前準備</a>
   </nav>
 
   <section class="slide" id="route">
@@ -166,6 +175,24 @@ footer{text-align:center;padding:2rem 1rem;color:#8b7355;font-size:.85rem;border
     </div>
     <div class="route-legend"><span><i class="legend-dot"></i>國際航班</span><span><i class="legend-dot city"></i>巴黎市區交通</span><span><i class="legend-dot train"></i>法國鐵路</span></div>
     <div class="callout">記住這個順序就不容易搞混：<strong>Paris Montparnasse → Bayonne → Saint-Jean-Pied-de-Port</strong>。巴黎機場並不是 TGV 出發站，中間還要先移動到 Montparnasse 車站。</div>
+  </section>
+
+  <section class="slide" id="steps">
+    <div class="slide-head"><span class="slide-no">📋</span><div><h2>一張表看完：從台灣到 SJPP 的六段流程</h2><p>下面的細節各自展開，這裡先給你可以在手機上對照的版本。</p></div></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>這一段</th><th>怎麼走</th><th>要注意</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>台北 → 阿布達比 → 巴黎</td><td>阿提哈德 EY899，桃園 TPE 起飛，經阿布達比 AUH 轉機抵達巴黎 CDG。</td><td>隨身行李是否秤重依當日地勤與航空公司規定；想用 Stopover 免費住宿要符合資格，且須在抵達前 72 小時完成預訂。</td></tr>
+          <tr><td>2</td><td>巴黎 CDG 入境</td><td>入境、領行李，再移動到市區的火車站。</td><td>入境排隊時間難估，接 TGV 要把入境、領行李、進站全部算進去；國際線與 TGV 分開購票時，前段延誤不會自動保留後段車票。</td></tr>
+          <tr><td>3</td><td>CDG → 巴黎市區</td><td>官方排班計程車固定費率：右岸 €56、左岸 €65（2026 年法國政府公告）。</td><td>只搭航廈外排班區的車，不要接受航廈內主動攬客者；費率每年更新，出發前重新核對。</td></tr>
+          <tr><td>4</td><td>Paris Montparnasse → Bayonne</td><td>搭 TGV INOUI，訂票時認明出發站是 Paris Montparnasse。</td><td>SNCF 一般約提前 4 個月開賣，暑假與特定期間依年度銷售日程調整。</td></tr>
+          <tr><td>5</td><td>Bayonne → SJPP</td><td>在 Bayonne 轉乘 TER，車程約 1 小時。</td><td>班次、月台會變，轉乘前確認當天時刻表與是否有施工替代巴士；不要和 TGV 接得太緊。</td></tr>
+          <tr><td>6</td><td>抵達 SJPP</td><td>到朝聖者辦公室（39 Rue de la Citadelle）領朝聖者護照、蓋下第一個章。</td><td>我當時護照費用是 €3，以現場公告為準；隔天 SJPP → Roncesvalles 是 24.2 公里、累積爬升約 1,351 公尺。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="source-note">這張表整理的是我 2026 年的實際走法與當時查到的官方資訊，不是即時班表；票價、班次與費率都可能調整。</p>
   </section>
 
   <section class="slide" id="flight">
@@ -302,6 +329,14 @@ footer{text-align:center;padding:2rem 1rem;color:#8b7355;font-size:.85rem;border
       <div class="metric"><strong>約 764–770 km</strong><span>SJPP 至 Santiago 主線，依路線版本與測量方式略有差異</span></div>
       <div class="metric"><strong>34 天</strong><span>我的實際徒步天數</span></div>
       <div class="metric"><strong>約 1,000 km</strong><span>包含我後續延伸與實際行走的完整旅程紀錄</span></div>
+    </div>
+    <div style="margin:1.4rem 0 0;padding:1.2rem 1.4rem;border:1px solid var(--line);border-radius:18px;background:var(--white)">
+      <h2 style="font-size:1.15rem;margin:0 0 .5rem;color:var(--ink)">接著看</h2>
+      <p style="margin:0;color:var(--muted);font-size:.95rem;line-height:1.95">
+        <a href="/guides/camino-frances.html" style="color:var(--gold);font-weight:700">朝聖之路完整攻略</a>：路線、天數與延伸到世界盡頭的選擇。<br>
+        <a href="/days/day0.html" style="color:var(--gold);font-weight:700">Day 0：抵達 SJPP 的第一天</a>：領朝聖者護照、入住庇護所與出發前準備。<br>
+        <a href="/days/" style="color:var(--gold);font-weight:700">38 篇徒步日誌</a>：從 SJPP 一路走到 Muxía 的每日紀錄。
+      </p>
     </div>
     <p class="source-note">法國之路沒有單一固定的官方里程數；不同路線變體與測量方式會造成差異。主線可先以約 764–770 公里理解，個人實際里程則會因繞行、住宿位置與延伸路線而增加。<a href="https://santiago.es/en/camino-de-santiago/french-way" target="_blank" rel="noopener">路線里程說明</a>。</p>
   </section>

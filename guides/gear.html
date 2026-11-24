@@ -42,6 +42,8 @@ footer .social a{margin:0 .5rem}
 .gear-hero{position:relative;overflow:hidden;border-radius:25px;padding:clamp(1.5rem,4vw,3.2rem);background:linear-gradient(125deg,#f2dfc7 0%,#fbf4ea 55%,#e9eee8 100%);border:1px solid var(--gear-line);box-shadow:0 10px 30px rgba(61,48,39,.07);display:grid;grid-template-columns:1.15fr .85fr;gap:1.5rem;align-items:center}
 .gear-kicker{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.72);border:1px solid rgba(193,120,23,.2);border-radius:999px;padding:.35rem .8rem;font-size:.78rem;letter-spacing:.08em;color:#8e5c1e;font-weight:700}
 .gear-hero h1{font-size:clamp(2rem,4vw,3.4rem);line-height:1.2;margin:1rem 0 .85rem;color:#33271f;letter-spacing:-.03em}
+h1 .h1-sub{display:block;font-size:.5em;line-height:1.35;letter-spacing:-.01em;margin-top:.42em;color:#5c4c3d}
+.gear-hero p.hero-story{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(1.02rem,1.7vw,1.28rem);font-weight:700;line-height:1.6;color:#6a5949;margin:.2rem 0 .9rem}
 .gear-hero p{font-size:1.05rem;line-height:1.9;color:#665748;max-width:610px;margin:0}
 .gear-hero .hero-note{margin-top:1.1rem;font-size:.88rem;color:#7c6b5c}
 .hero-art{min-width:0}
@@ -130,7 +132,13 @@ footer .social a{margin:0 .5rem}
 .resource-box p{margin:0;color:#7b6d5e;font-size:.84rem}
 .resource-button{display:inline-block;padding:.7rem 1rem;border-radius:999px;background:#a9671b;color:white!important;font-weight:750;text-decoration:none!important;font-size:.88rem}
 .resource-button:hover{background:#895414}
-.source-note{font-size:.76rem;color:#8a7c6d;line-height:1.7;margin-top:1rem}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:.4rem 0 0;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+  .table-wrap table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
+  .table-wrap th,.table-wrap td{padding:.75rem .9rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.65}
+  .table-wrap th{background:var(--warm);color:#5c4c3d;font-weight:700;font-size:.84rem;white-space:nowrap}
+  .table-wrap tr:last-child td{border-bottom:0}
+  .table-wrap td:first-child{font-weight:700;color:var(--gold);white-space:nowrap}
+  .source-note{font-size:.76rem;color:#8a7c6d;line-height:1.7;margin-top:1rem}
 .source-note a{color:#97621d;text-decoration:underline}
 @media(max-width:780px){.gear-hero{grid-template-columns:1fr}.hero-art{max-width:460px;margin:0 auto}.weight-layout{grid-template-columns:1fr}.camera-grid{grid-template-columns:repeat(3,1fr)}.rule-grid,.layer-stack{grid-template-columns:1fr}.ship-steps{grid-template-columns:1fr 1fr}.footcare-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.gear-main{padding:1rem .75rem 3rem!important}.gear-stats{gap:.45rem}.gear-stat{padding:.8rem .65rem}.gear-stat span{font-size:.72rem}.chapter-nav{margin-left:-.75rem;margin-right:-.75rem;padding-left:.75rem}.shoe-grid,.ship-facts,.takeaway-list{grid-template-columns:1fr}.camera-grid{grid-template-columns:repeat(2,1fr)}.weight-illustration{grid-template-columns:1fr 1fr}.pack-drawing{grid-row:span 2}.ship-steps{gap:.5rem}.ship-step{padding:.8rem .5rem;min-height:125px}}
@@ -170,7 +178,8 @@ footer .social a{margin:0 .5rem}
   <section class="gear-hero">
     <div>
       <span class="gear-kicker">CAMINO FRANCÉS · FIELD NOTES</span>
-      <h1>走過 1,000 公里後，<br>我會怎麼重新打包？</h1>
+      <h1>朝聖之路裝備實測：<span class="h1-sub">34 天法國之路打包心得</span></h1>
+      <p class="hero-story">走過 1,000 公里後，我會怎麼重新打包？</p>
       <p>34 天的徒步，背包裡裝的不只是衣服和生活用品，還有一整套攝影器材。真正走上路才知道，什麼值得一路背著，什麼其實可以放下。</p>
       <div class="hero-note">這不是標準答案，而是我從 SJPP 出發後，一路走到大西洋世界盡頭的實戰整理。</div>
     </div>
@@ -197,7 +206,7 @@ footer .social a{margin:0 .5rem}
     <div class="gear-stat"><strong>€8</strong><span>Day 1 行李寄送實付</span></div>
   </div>
 
-  <div class="chapter-nav" aria-label="本頁快速導覽"><a href="#video">🎬 裝備影片</a><a href="#flatlay">🧳 裝備攤平圖</a>
+  <div class="chapter-nav" aria-label="本頁快速導覽"><a href="#video">🎬 裝備影片</a><a href="#flatlay">🧳 裝備攤平圖</a><a href="#checklist">📋 裝備清單表</a>
     <a href="#principles">01 打包原則</a><a href="#weight">02 背包與攝影</a><a href="#clothing">03 衣物系統</a><a href="#shoes">04 鞋子選擇</a><a href="#footcare">05 足部照護</a><a href="#luggage">06 行李寄送</a><a href="#lessons">07 實戰心得</a>
   </div>
 
@@ -211,7 +220,30 @@ footer .social a{margin:0 .5rem}
 
   <section class="gear-slide" id="flatlay">
     <div class="slide-head"><div class="slide-no">🧳</div><div><h2>裝備攤平圖：這就是我的全部行李</h2><p>出發前攤開拍照，逐項檢查；走完 34 天回頭看，這張圖就是答案。</p></div></div>
-    <figure style="margin:0"><img src="/guides/images/gear-flatlay.jpg" alt="朝聖之路裝備攤平圖：背包、空拍機、Insta360、五指羊毛襪、護照夾、睡袋內膽等 34 天法國之路實測裝備一覽" style="width:100%;border-radius:16px" loading="lazy"><figcaption style="font-size:.84rem;color:#7d7061;margin-top:.5rem">圖中標註多為實際使用心得：筋膜球、五指羊毛襪、防水泡用品與 9 分鐘實戰影片提到的重點，細節見下方各章節。</figcaption></figure>
+    <figure style="margin:0"><img decoding="async" src="/guides/images/gear-flatlay.jpg" srcset="/guides/images/gear-flatlay-960.jpg 960w, /guides/images/gear-flatlay.jpg 1600w" alt="朝聖之路裝備攤平圖：背包、空拍機、Insta360、五指羊毛襪、護照夾、睡袋內膽等 34 天法國之路實測裝備一覽" style="width:100%;border-radius:16px" loading="lazy" width="1600" height="883"><figcaption style="font-size:.84rem;color:#7d7061;margin-top:.5rem">圖中標註多為實際使用心得：筋膜球、五指羊毛襪、防水泡用品與 9 分鐘實戰影片提到的重點，細節見下方各章節。</figcaption></figure>
+  </section>
+
+  <section class="gear-slide" id="checklist">
+    <div class="slide-head"><div class="slide-no">📋</div><div><h2>一頁看完：我實際帶上路的裝備清單</h2><p>把整趟的取捨整理成一張表，出發前逐項對照，也可以直接拿去改。</p></div></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>我帶的／做法</th><th>必帶或可省</th><th>走完後的感想</th></tr></thead>
+        <tbody>
+          <tr><td>背包</td><td>每天背著走的全部家當；Day 1 另用 IKEA 袋把暫時用不到的東西寄到 Roncesvalles。</td><td>必帶</td><td>翻越庇里牛斯山那天讓背包輕一點，非常值得。</td></tr>
+          <tr><td>鞋子</td><td>HOKA Hopara 2 溯溪鞋。</td><td>必帶</td><td>散熱好、能應付多種路面，但走路時容易進小碎石；如果重走一次，會優先考慮 HOKA 越野跑鞋。</td></tr>
+          <tr><td>襪子</td><td>Injinji 五指襪，2–3 雙輪替。</td><td>必帶</td><td>能減少腳趾摩擦，但要搭配合腳的鞋與保持乾爽才有效。</td></tr>
+          <tr><td>貼身層</td><td>排汗、好洗、容易乾的材質。</td><td>必帶</td><td>美麗諾羊毛抗異味、能調節溫度，但濕了之後比合成纖維乾得慢。</td></tr>
+          <tr><td>保暖層</td><td>輕薄羽絨外套，依出發月份與山區溫差調整。</td><td>看季節</td><td>不必全年照抄同一份清單。</td></tr>
+          <tr><td>防風雨層</td><td>能應付風雨的外層，加上背包防水方案。</td><td>必帶</td><td>走到加利西亞一帶，不能只考慮晴天。</td></tr>
+          <tr><td>足部照護</td><td>Compeed 水泡貼、凡士林／防磨膏、乾爽的備用襪。</td><td>必帶</td><td>一發現熱點就處理，比事後補救省事得多。</td></tr>
+          <tr><td>個人藥品</td><td>小護士、防曬、常用藥、維他命、感冒藥、胃藥、肌肉鬆弛。</td><td>必帶</td><td>小護士超萬用，燒襠、蚊蟲叮咬都靠它。</td></tr>
+          <tr><td>攝影器材</td><td>手機、Insta360 X5、空拍機、單眼相機、拍立得。</td><td>可省</td><td>佔掉可觀的重量與電池；帶空拍機要先確認歐盟操作規範與禁限飛區。</td></tr>
+          <tr><td>追蹤</td><td>AirTag。</td><td>選配</td><td>寄送行李時的輔助追蹤，不保證任何時候都看得到即時位置。</td></tr>
+          <tr><td>行李寄送</td><td>Day 1 用 Express Bourricot 從 SJPP 寄到 Roncesvalles（€8）；西班牙境內如 Correos Paq Mochila。</td><td>選配</td><td>業者規則、價格與寄放位置會調整，出發前要再確認一次。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="source-note">重量：整趟以 7 kg 以內為目標——這是我自己設的數字，不是每個人都要照這個標準。逐項重量與秤重方式整理在 Google 試算表，出發前建議自己秤一次，並註明重量是否包含水、食物與攝影器材，比較才不會失真。</p>
   </section>
 
   <section class="gear-slide" id="principles">
@@ -324,6 +356,16 @@ footer .social a{margin:0 .5rem}
   <div class="resource-box">
     <div><h3>想看完整裝備清單與重量整理？</h3><p>我另外整理了 Google 試算表，方便出發前逐項檢查、下載與列印。</p></div>
     <a class="resource-button" href="https://docs.google.com/spreadsheets/d/1_g_MoY5vupPOMYLqZIwwf4sx1jYIJqCEVhdY-r2jBI4/edit?usp=drivesdk" target="_blank" rel="noopener">開啟完整裝備清單 ↗</a>
+  </div>
+
+  <div class="resource-box">
+    <div><h3>把裝備放回整趟旅程裡看</h3><p>先看完整路線、天數與延伸到世界盡頭的安排，再回來決定背包要帶多少。</p></div>
+    <a class="resource-button" href="/guides/camino-frances.html">朝聖之路完整攻略 ↗</a>
+  </div>
+
+  <div class="resource-box">
+    <div><h3>行李寄送的實際經驗</h3><p>翻越庇里牛斯山的第一天，我把多餘的行李寄到隔天的住宿點，Day 1 日誌有完整紀錄。</p></div>
+    <a class="resource-button" href="/days/day1.html">閱讀 Day 1 ↗</a>
   </div>
 
   <p class="source-note">延伸參考：<a href="https://www.rei.com/learn/expert-advice/underwear.html" target="_blank" rel="noopener">REI：美麗諾羊毛與合成纖維特性</a> · <a href="https://americanhiking.org/blisters/" target="_blank" rel="noopener">American Hiking Society：水泡預防</a> · <a href="https://www.easa.europa.eu/en/the-agency/faqs/i-am-non-eu-visitor-and-i-want-fly-drone-europe" target="_blank" rel="noopener">EASA：非歐盟旅客在歐洲操作無人機</a> · <a href="https://www.seguridadaerea.gob.es/en/ambitos/drones/how-to-fly-a-uas-in-spain" target="_blank" rel="noopener">西班牙 AESA：無人機飛行限制</a>。裝備選擇屬個人實走經驗；服務價格、開放日期與法規可能變動，出發前請以官方最新資訊為準。</p>
