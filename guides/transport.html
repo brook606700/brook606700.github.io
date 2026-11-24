@@ -101,7 +101,13 @@ h1 .h1-sub{display:block;font-size:.5em;line-height:1.35;letter-spacing:-.01em;m
 .resource-button{display:inline-block;padding:.7rem 1rem;border-radius:999px;background:#a9671b;color:white!important;font-weight:750;text-decoration:none!important;font-size:.88rem}.resource-button:hover{background:#895414}
 .quote{border-radius:21px;padding:clamp(1.2rem,3vw,2rem);background:linear-gradient(120deg,#e9efe8,#fbf5e9);border:1px solid #dfe5d8;text-align:center;margin:1.3rem 0}
 .quote p{font-size:clamp(1.1rem,2.5vw,1.45rem);font-weight:750;line-height:1.55;color:#4c5b48;margin:0}.quote small{display:block;margin-top:.6rem;color:#7b816f}
-.source-note{font-size:.76rem;color:#8a7c6d;line-height:1.75;margin-top:1rem}.source-note a{color:#97621d;text-decoration:underline}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:.4rem 0 0;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+  .table-wrap table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
+  .table-wrap th,.table-wrap td{padding:.75rem .9rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.65}
+  .table-wrap th{background:var(--warm);color:#5c4c3d;font-weight:700;font-size:.84rem;white-space:nowrap}
+  .table-wrap tr:last-child td{border-bottom:0}
+  .table-wrap td:first-child{font-weight:700;color:var(--gold);white-space:nowrap}
+  .source-note{font-size:.76rem;color:#8a7c6d;line-height:1.75;margin-top:1rem}.source-note a{color:#97621d;text-decoration:underline}
 @media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{max-width:490px;margin:0 auto}.route-line{grid-template-columns:repeat(3,1fr)}.route-stop:nth-child(3):after{display:none}.process{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.transport-main{padding:1rem .75rem 3rem}.stats{gap:.45rem}.stat{padding:.8rem .65rem}.stat span{font-size:.72rem}.chapter-nav{margin-left:-.75rem;margin-right:-.75rem;padding-left:.75rem}.split,.checklist{grid-template-columns:1fr}.route-line{grid-template-columns:repeat(2,1fr)}.route-stop:nth-child(2n):after{display:none}.route-stop:nth-child(3):after{display:block}.process{gap:.5rem}.process-card{padding:.85rem .55rem}.metric-grid{grid-template-columns:1fr 1fr}.price-row{gap:.5rem}.site-header .tagline{font-size:.82rem}}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -154,7 +160,7 @@ h1 .h1-sub{display:block;font-size:.5em;line-height:1.35;letter-spacing:-.01em;m
   </section>
 
   <nav class="chapter-nav" aria-label="本頁章節">
-    <a href="#route">完整路線</a><a href="#flight">國際航班</a><a href="#paris">巴黎入境</a><a href="#train">TGV 與 TER</a><a href="#sjpp">抵達 SJPP</a><a href="#prep">行前準備</a>
+    <a href="#route">完整路線</a><a href="#steps">📋 流程表</a><a href="#flight">國際航班</a><a href="#paris">巴黎入境</a><a href="#train">TGV 與 TER</a><a href="#sjpp">抵達 SJPP</a><a href="#prep">行前準備</a>
   </nav>
 
   <section class="slide" id="route">
@@ -169,6 +175,24 @@ h1 .h1-sub{display:block;font-size:.5em;line-height:1.35;letter-spacing:-.01em;m
     </div>
     <div class="route-legend"><span><i class="legend-dot"></i>國際航班</span><span><i class="legend-dot city"></i>巴黎市區交通</span><span><i class="legend-dot train"></i>法國鐵路</span></div>
     <div class="callout">記住這個順序就不容易搞混：<strong>Paris Montparnasse → Bayonne → Saint-Jean-Pied-de-Port</strong>。巴黎機場並不是 TGV 出發站，中間還要先移動到 Montparnasse 車站。</div>
+  </section>
+
+  <section class="slide" id="steps">
+    <div class="slide-head"><span class="slide-no">📋</span><div><h2>一張表看完：從台灣到 SJPP 的六段流程</h2><p>下面的細節各自展開，這裡先給你可以在手機上對照的版本。</p></div></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>這一段</th><th>怎麼走</th><th>要注意</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>台北 → 阿布達比 → 巴黎</td><td>阿提哈德 EY899，桃園 TPE 起飛，經阿布達比 AUH 轉機抵達巴黎 CDG。</td><td>隨身行李是否秤重依當日地勤與航空公司規定；想用 Stopover 免費住宿要符合資格，且須在抵達前 72 小時完成預訂。</td></tr>
+          <tr><td>2</td><td>巴黎 CDG 入境</td><td>入境、領行李，再移動到市區的火車站。</td><td>入境排隊時間難估，接 TGV 要把入境、領行李、進站全部算進去；國際線與 TGV 分開購票時，前段延誤不會自動保留後段車票。</td></tr>
+          <tr><td>3</td><td>CDG → 巴黎市區</td><td>官方排班計程車固定費率：右岸 €56、左岸 €65（2026 年法國政府公告）。</td><td>只搭航廈外排班區的車，不要接受航廈內主動攬客者；費率每年更新，出發前重新核對。</td></tr>
+          <tr><td>4</td><td>Paris Montparnasse → Bayonne</td><td>搭 TGV INOUI，訂票時認明出發站是 Paris Montparnasse。</td><td>SNCF 一般約提前 4 個月開賣，暑假與特定期間依年度銷售日程調整。</td></tr>
+          <tr><td>5</td><td>Bayonne → SJPP</td><td>在 Bayonne 轉乘 TER，車程約 1 小時。</td><td>班次、月台會變，轉乘前確認當天時刻表與是否有施工替代巴士；不要和 TGV 接得太緊。</td></tr>
+          <tr><td>6</td><td>抵達 SJPP</td><td>到朝聖者辦公室（39 Rue de la Citadelle）領朝聖者護照、蓋下第一個章。</td><td>我當時護照費用是 €3，以現場公告為準；隔天 SJPP → Roncesvalles 是 24.2 公里、累積爬升約 1,351 公尺。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="source-note">這張表整理的是我 2026 年的實際走法與當時查到的官方資訊，不是即時班表；票價、班次與費率都可能調整。</p>
   </section>
 
   <section class="slide" id="flight">
